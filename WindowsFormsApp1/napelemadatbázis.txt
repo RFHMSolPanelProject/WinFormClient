@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS napelem_proj;
-CREATE DATABASE napelem_proj;
+DROP DATABASE IF EXISTS napelem;
+CREATE DATABASE napelem;
 
 DROP TABLE IF EXISTS Folyamatok;
 DROP TABLE IF EXISTS Alkatreszek;
