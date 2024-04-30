@@ -38,12 +38,10 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.button7 = new System.Windows.Forms.Button();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -56,7 +54,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -123,12 +120,10 @@
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.pictureBox11);
             this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.pictureBox9);
             this.panel1.Controls.Add(this.pictureBox3);
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.richTextBox1);
-            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button3);
@@ -142,7 +137,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = global::WindowsFormsApp1.Properties.Resources.X;
-            this.pictureBox7.Location = new System.Drawing.Point(12, 396);
+            this.pictureBox7.Location = new System.Drawing.Point(12, 347);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(39, 47);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,7 +157,7 @@
             // pictureBox11
             // 
             this.pictureBox11.Image = global::WindowsFormsApp1.Properties.Resources.price2;
-            this.pictureBox11.Location = new System.Drawing.Point(12, 292);
+            this.pictureBox11.Location = new System.Drawing.Point(12, 285);
             this.pictureBox11.Name = "pictureBox11";
             this.pictureBox11.Size = new System.Drawing.Size(39, 47);
             this.pictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -177,23 +172,13 @@
             this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button7.Location = new System.Drawing.Point(59, 400);
+            this.button7.Location = new System.Drawing.Point(59, 347);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(111, 51);
+            this.button7.Size = new System.Drawing.Size(111, 45);
             this.button7.TabIndex = 16;
-            this.button7.Text = "Projekt Lezárása";
+            this.button7.Text = "\r\nProjekt lezárása";
             this.button7.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button7.UseVisualStyleBackColor = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.Image = global::WindowsFormsApp1.Properties.Resources.price2;
-            this.pictureBox9.Location = new System.Drawing.Point(12, 343);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(39, 47);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox9.TabIndex = 15;
-            this.pictureBox9.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -208,7 +193,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = global::WindowsFormsApp1.Properties.Resources.booked;
-            this.pictureBox6.Location = new System.Drawing.Point(12, 242);
+            this.pictureBox6.Location = new System.Drawing.Point(12, 232);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(39, 39);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -218,7 +203,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = global::WindowsFormsApp1.Properties.Resources.list;
-            this.pictureBox5.Location = new System.Drawing.Point(12, 188);
+            this.pictureBox5.Location = new System.Drawing.Point(12, 181);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(39, 39);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -237,22 +222,6 @@
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "Szakember";
             // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.Location = new System.Drawing.Point(57, 343);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(111, 51);
-            this.button6.TabIndex = 7;
-            this.button6.Text = "Árkalkuláció (raktárban van)";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button6.UseVisualStyleBackColor = false;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.CornflowerBlue;
@@ -261,11 +230,11 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(58, 291);
+            this.button5.Location = new System.Drawing.Point(58, 288);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(106, 47);
             this.button5.TabIndex = 6;
-            this.button5.Text = "Munkavégzési Idő és Munkadíj";
+            this.button5.Text = "Munkavégzési idő és munkadíj";
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -278,11 +247,11 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(58, 242);
+            this.button4.Location = new System.Drawing.Point(58, 230);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 60);
+            this.button4.Size = new System.Drawing.Size(108, 47);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Kiválasztott Alkatrészek Projekthez";
+            this.button4.Text = "Kiválasztott alkatrészek projekthez";
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button4.UseVisualStyleBackColor = false;
             // 
@@ -294,11 +263,11 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button3.Location = new System.Drawing.Point(57, 187);
+            this.button3.Location = new System.Drawing.Point(57, 182);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 78);
+            this.button3.Size = new System.Drawing.Size(121, 45);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Alkatrészek Listázása";
+            this.button3.Text = "Alkatrészek listázása";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.UseVisualStyleBackColor = false;
             // 
@@ -310,11 +279,11 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(57, 130);
+            this.button2.Location = new System.Drawing.Point(57, 128);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 68);
+            this.button2.Size = new System.Drawing.Size(121, 39);
             this.button2.TabIndex = 3;
-            this.button2.Text = "Projekt Listázása";
+            this.button2.Text = "\r\nProjekt listázása";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.UseVisualStyleBackColor = false;
             // 
@@ -328,9 +297,9 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(58, 80);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 51);
+            this.button1.Size = new System.Drawing.Size(121, 39);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Új Projekt";
+            this.button1.Text = "\r\nÚj projekt";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -355,7 +324,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -374,14 +342,12 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox4;

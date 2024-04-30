@@ -29,12 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.missing_datagrid = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.missing_datagrid = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,42 +54,17 @@
             this.panel1.Size = new System.Drawing.Size(139, 447);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // button2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(142, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(661, 65);
-            this.panel2.TabIndex = 1;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
-            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(139, 65);
-            this.richTextBox1.TabIndex = 2;
-            this.richTextBox1.Text = "Hiányzó alkatrészek";
-            // 
-            // missing_datagrid
-            // 
-            this.missing_datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.missing_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.missing_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
-            this.missing_datagrid.Location = new System.Drawing.Point(140, 61);
-            this.missing_datagrid.Name = "missing_datagrid";
-            this.missing_datagrid.ReadOnly = true;
-            this.missing_datagrid.Size = new System.Drawing.Size(661, 393);
-            this.missing_datagrid.TabIndex = 41;
+            this.button2.BackColor = System.Drawing.Color.LavenderBlush;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.Location = new System.Drawing.Point(9, 210);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(111, 51);
+            this.button2.TabIndex = 43;
+            this.button2.Text = "Lefoglalt alkatrészek listázása";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -104,23 +78,41 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // richTextBox1
             // 
-            this.button2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(9, 210);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 51);
-            this.button2.TabIndex = 43;
-            this.button2.Text = "Lefoglalt alkatrészek listázása";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.richTextBox1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(139, 65);
+            this.richTextBox1.TabIndex = 2;
+            this.richTextBox1.Text = "Hiányzó alkatrészek";
             // 
-            // Column1
+            // panel2
             // 
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel2.ForeColor = System.Drawing.Color.Black;
+            this.panel2.Location = new System.Drawing.Point(142, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(661, 65);
+            this.panel2.TabIndex = 1;
+            // 
+            // missing_datagrid
+            // 
+            this.missing_datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.missing_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.missing_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.missing_datagrid.Location = new System.Drawing.Point(140, 61);
+            this.missing_datagrid.Name = "missing_datagrid";
+            this.missing_datagrid.ReadOnly = true;
+            this.missing_datagrid.Size = new System.Drawing.Size(661, 393);
+            this.missing_datagrid.TabIndex = 41;
             // 
             // Column2
             // 
@@ -170,7 +162,6 @@
         private System.Windows.Forms.DataGridView missing_datagrid;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;

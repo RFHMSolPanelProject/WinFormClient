@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS ProjektRaktar;
 DROP TABLE IF EXISTS Raktar;
 DROP TABLE IF EXISTS Megrendelo;
 DROP TABLE IF EXISTS Felhasznalok;
-DROP TABLE IF EXISTS Hianyzoalkatreszek
+DROP TABLE IF EXISTS Hianyzoalkatreszek;
 
 
 CREATE TABLE Folyamatok
@@ -91,11 +91,11 @@ CREATE TABLE Megrendelo
 
 CREATE TABLE Hianyzoalkatreszek
 (
-	hiany_id 	INT 	PRIMARY KEY 	AUTO_INCREMENT,
 	hiany_nev 	VARCHAR(255) 		NOT NULL,
 	hiany_db 	INT 			NOT NULL,
 	hiany_ar 	INT 			NOT NULL,
-	hiany_statusz 	VARCHAR(255) 		NOT NULL
+	hiany_statusz 	VARCHAR(255) 		NOT NULL,
+	FOREIGN KEY(hiany_nev) REFERENCES Alkatreszek(ANev)
 );
 
 ALTER TABLE Hianyzoalkatreszek AUTO_INCREMENT = 1000;

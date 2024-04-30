@@ -49,10 +49,7 @@ namespace WindowsFormsApp1
             // Adatok betöltése DataGridView-be
             LoadData();
         }
-            private void button2_Click(object sender, EventArgs e)
-        {
-            LoadData();
-        }
+        private void button2_Click(object sender, EventArgs e) => LoadData();
         private void LoadData()
         {
             datagrid.AutoGenerateColumns = false;
@@ -86,16 +83,6 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
 
@@ -111,20 +98,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO Munkavegzes(ProjektNev,Munkavegzes,Munkadij) VALUES (@ProjektNev,@Munkavegzes, @Munkadij)", con);
-
-            cmd.Parameters.AddWithValue("@ProjektNev", textBox2.Text);
-            cmd.Parameters.AddWithValue("@Munkavegzes", textBox3.Text);
-            cmd.Parameters.AddWithValue("@Munkadij", textBox5.Text);
-            
-
-
-            con.Open();
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
+        private void button3_Click(object sender, EventArgs e) => runQuery();
         private void runQuery()
         {
             MySqlCommand cmd = new MySqlCommand("INSERT INTO Munkavegzes(ProjektNev,Munkavegzes,Munkadij) VALUES (@ProjektNev,@Munkavegzes, @Munkadij)", con);

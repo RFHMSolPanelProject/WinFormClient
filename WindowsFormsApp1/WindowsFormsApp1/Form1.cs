@@ -22,7 +22,8 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            ModifyPrices mp = new ModifyPrices();
+            mp.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -37,7 +38,6 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Hide();
             Hiany h = new Hiany();
             h.Show();
         }

@@ -10,7 +10,7 @@ namespace WindowsFormsApp1
     {
         // Idő alapú kizárás
 
-        private int fail = 0;
+        private int loginFail = 0;
         private DateTime lockoutEnd;
 
         // Segédfüggvények
@@ -87,13 +87,13 @@ namespace WindowsFormsApp1
 
             if (AuthUser(user, pwd))
             {
-                fail = 0;
+                loginFail = 0;
                 Hide();
             }
             else
             {
-                fail++;
-                if (fail >= 3)
+                loginFail++;
+                if (loginFail >= 3)
                 {
                     lockoutEnd = DateTime.Now.AddMinutes(5);
                     MessageBox.Show("Maximális bejelentkezési próbálkozások száma elérve! Ki van zárva 5 percre!");
