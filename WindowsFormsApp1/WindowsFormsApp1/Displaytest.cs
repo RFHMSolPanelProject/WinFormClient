@@ -149,8 +149,9 @@ namespace WindowsFormsApp1
                 if (myReader.HasRows)
                 {
                     MessageBox.Show("Beiras folyamatban");
-                    while (myReader.Read())                 //ANev                  //Maxdb                             //DB                      //Ár
-                    { Console.WriteLine(myReader.GetString(0) + "-" + myReader.GetString(1) + "-" + myReader.GetString(2) + "-" + myReader.GetString(3)); }
+                    while (myReader.Read())         //ANev                  //Maxdb                             //DB                      //Ár
+                    {
+                        Console.WriteLine(myReader.GetString(0) + "-" + myReader.GetString(1) + "-" + myReader.GetString(2) + "-" + myReader.GetString(3)); }
                 }
                 else
                 {

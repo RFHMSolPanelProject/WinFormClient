@@ -98,8 +98,8 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button3_Click(object sender, EventArgs e) => runQuery();
-        private void runQuery()
+        private void button3_Click(object sender, EventArgs e) => RunQuery();
+        private void RunQuery()
         {
             MySqlCommand cmd = new MySqlCommand("INSERT INTO Munkavegzes(ProjektNev,Munkavegzes,Munkadij) VALUES (@ProjektNev,@Munkavegzes, @Munkadij)", con);
 

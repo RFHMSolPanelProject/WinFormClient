@@ -86,7 +86,7 @@
             this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
             this.richTextBox1.Location = new System.Drawing.Point(0, 0);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(139, 65);
+            this.richTextBox1.Size = new System.Drawing.Size(139, 62);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "Hiányzó alkatrészek";
             // 

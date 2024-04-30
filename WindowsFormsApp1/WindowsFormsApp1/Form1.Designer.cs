@@ -149,9 +149,10 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(111, 39);
             this.button6.TabIndex = 7;
-            this.button6.Text = "Maximum Darabszám";
+            this.button6.Text = "Maximum darabszám";
             this.button6.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button5
             // 
@@ -165,9 +166,10 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(111, 38);
             this.button5.TabIndex = 6;
-            this.button5.Text = "Bejövő Alapanyag";
+            this.button5.Text = "Bejövő alapanyag";
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button3
             // 
@@ -181,7 +183,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(113, 60);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Hiányzó és Lefoglalt Alkatrészek Listázása";
+            this.button3.Text = "Hiányzó és lefoglalt alkatrészek listázása";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -215,7 +217,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(109, 39);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Új Alkatrész Hozzáadása";
+            this.button1.Text = "Új alkatrész hozzáadása";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);

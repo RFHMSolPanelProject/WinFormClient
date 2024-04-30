@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -38,7 +39,6 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -62,13 +62,25 @@
             this.panel3.Size = new System.Drawing.Size(1024, 66);
             this.panel3.TabIndex = 56;
             // 
+            // textBox9
+            // 
+            this.textBox9.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBox9.ForeColor = System.Drawing.Color.White;
+            this.textBox9.Location = new System.Drawing.Point(10, 17);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(364, 28);
+            this.textBox9.TabIndex = 53;
+            this.textBox9.Text = "Új projekt hozzáadása";
+            // 
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(201, 371);
+            this.button3.Location = new System.Drawing.Point(203, 370);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 38);
             this.button3.TabIndex = 55;
@@ -82,7 +94,7 @@
             this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(459, 370);
+            this.button2.Location = new System.Drawing.Point(457, 369);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 39);
             this.button2.TabIndex = 54;
@@ -104,12 +116,13 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(203, 293);
+            this.textBox6.Location = new System.Drawing.Point(203, 297);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(193, 31);
+            this.textBox6.Size = new System.Drawing.Size(158, 24);
             this.textBox6.TabIndex = 49;
             this.textBox6.Text = "Státusz:";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox3
             // 
@@ -125,11 +138,12 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox4.Location = new System.Drawing.Point(201, 247);
+            this.textBox4.Location = new System.Drawing.Point(203, 252);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(166, 24);
+            this.textBox4.Size = new System.Drawing.Size(158, 24);
             this.textBox4.TabIndex = 47;
             this.textBox4.Text = "Leírás:";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox2
             // 
@@ -145,24 +159,13 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(203, 207);
+            this.textBox1.Location = new System.Drawing.Point(203, 210);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(157, 24);
+            this.textBox1.Size = new System.Drawing.Size(158, 24);
             this.textBox1.TabIndex = 45;
             this.textBox1.Text = "Helyszín:";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox9
-            // 
-            this.textBox9.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox9.ForeColor = System.Drawing.Color.White;
-            this.textBox9.Location = new System.Drawing.Point(10, 17);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(364, 28);
-            this.textBox9.TabIndex = 53;
-            this.textBox9.Text = "Új projekt hozzáadása";
             // 
             // panel1
             // 
@@ -187,11 +190,12 @@
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox8.Location = new System.Drawing.Point(203, 159);
+            this.textBox8.Location = new System.Drawing.Point(203, 168);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(157, 24);
+            this.textBox8.Size = new System.Drawing.Size(158, 24);
             this.textBox8.TabIndex = 58;
             this.textBox8.Text = "Projekt kódja:";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // datagrid

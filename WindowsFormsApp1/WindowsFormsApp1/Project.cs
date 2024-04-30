@@ -99,8 +99,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button3_Click_1(object sender, EventArgs e) => RunQuery();
-        private void RunQuery()      //Hozzáad
+        private void button3_Click_1(object sender, EventArgs e) // Hozzáad
         {
 
             MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");

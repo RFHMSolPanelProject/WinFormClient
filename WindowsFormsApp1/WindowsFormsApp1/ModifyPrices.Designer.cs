@@ -49,9 +49,9 @@
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button3.Location = new System.Drawing.Point(529, 315);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(87, 33);
+            this.button3.Size = new System.Drawing.Size(103, 33);
             this.button3.TabIndex = 23;
-            this.button3.Text = "Cancel";
+            this.button3.Text = "Mégse";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -60,16 +60,16 @@
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button1.Location = new System.Drawing.Point(209, 315);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(85, 33);
+            this.button1.Size = new System.Drawing.Size(103, 33);
             this.button1.TabIndex = 22;
-            this.button1.Text = "Save";
+            this.button1.Text = "Hozzáad";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(408, 207);
+            this.textBox5.Location = new System.Drawing.Point(424, 207);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(208, 31);
             this.textBox5.TabIndex = 21;
@@ -80,16 +80,18 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(209, 207);
+            this.textBox6.Location = new System.Drawing.Point(209, 212);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(208, 24);
+            this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox6.Size = new System.Drawing.Size(193, 24);
             this.textBox6.TabIndex = 20;
-            this.textBox6.Text = "Product Price";
+            this.textBox6.Text = "Darabszám:";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(408, 159);
+            this.textBox3.Location = new System.Drawing.Point(424, 159);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(208, 31);
             this.textBox3.TabIndex = 19;
@@ -100,16 +102,18 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox4.Location = new System.Drawing.Point(209, 159);
+            this.textBox4.Location = new System.Drawing.Point(209, 165);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(208, 24);
+            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox4.Size = new System.Drawing.Size(193, 24);
             this.textBox4.TabIndex = 18;
-            this.textBox4.Text = "Product Cost Price ";
+            this.textBox4.Text = "Max. darabszám:";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(408, 115);
+            this.textBox2.Location = new System.Drawing.Point(424, 115);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(208, 31);
             this.textBox2.TabIndex = 17;
@@ -120,11 +124,13 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(209, 118);
+            this.textBox1.Location = new System.Drawing.Point(209, 120);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(208, 24);
+            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox1.Size = new System.Drawing.Size(193, 24);
             this.textBox1.TabIndex = 16;
-            this.textBox1.Text = "Product Name";
+            this.textBox1.Text = "Terméknév:";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // panel2
             // 
@@ -158,7 +164,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox7.Location = new System.Drawing.Point(408, 256);
+            this.textBox7.Location = new System.Drawing.Point(424, 256);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(208, 31);
             this.textBox7.TabIndex = 25;
@@ -169,11 +175,13 @@
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox8.Location = new System.Drawing.Point(209, 256);
+            this.textBox8.Location = new System.Drawing.Point(209, 263);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(208, 24);
+            this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox8.Size = new System.Drawing.Size(193, 24);
             this.textBox8.TabIndex = 24;
-            this.textBox8.Text = "Product Number";
+            this.textBox8.Text = "Ár:";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ModifyPrices
             // 

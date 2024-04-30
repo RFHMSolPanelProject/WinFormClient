@@ -92,11 +92,12 @@ namespace WindowsFormsApp1
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(185, 163);
+            this.textBox6.Location = new System.Drawing.Point(185, 165);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(157, 24);
             this.textBox6.TabIndex = 51;
-            this.textBox6.Text = "Munkadíj";
+            this.textBox6.Text = "Munkadíj:";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox3
             // 
@@ -113,11 +114,12 @@ namespace WindowsFormsApp1
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox4.Location = new System.Drawing.Point(185, 115);
+            this.textBox4.Location = new System.Drawing.Point(185, 120);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(190, 24);
+            this.textBox4.Size = new System.Drawing.Size(157, 24);
             this.textBox4.TabIndex = 49;
-            this.textBox4.Text = "Munkavégzés";
+            this.textBox4.Text = "Munkaóra:";
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox2
             // 
@@ -134,11 +136,12 @@ namespace WindowsFormsApp1
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(185, 74);
+            this.textBox1.Location = new System.Drawing.Point(185, 76);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(157, 24);
             this.textBox1.TabIndex = 47;
-            this.textBox1.Text = "Projekt Név";
+            this.textBox1.Text = "Projekt neve:";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // button3
             // 
@@ -146,7 +149,7 @@ namespace WindowsFormsApp1
             this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(185, 233);
+            this.button3.Location = new System.Drawing.Point(185, 232);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(110, 38);
             this.button3.TabIndex = 57;
@@ -160,7 +163,7 @@ namespace WindowsFormsApp1
             this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(400, 230);
+            this.button2.Location = new System.Drawing.Point(400, 231);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(108, 39);
             this.button2.TabIndex = 56;
@@ -175,9 +178,9 @@ namespace WindowsFormsApp1
             this.ProjektNev,
             this.Munkavegzes,
             this.Munkadij});
-            this.datagrid.Location = new System.Drawing.Point(544, 82);
+            this.datagrid.Location = new System.Drawing.Point(544, 76);
             this.datagrid.Name = "datagrid";
-            this.datagrid.Size = new System.Drawing.Size(344, 187);
+            this.datagrid.Size = new System.Drawing.Size(344, 194);
             this.datagrid.TabIndex = 58;
             // 
             // ProjektNev
