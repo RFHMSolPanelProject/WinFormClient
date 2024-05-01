@@ -47,6 +47,8 @@ namespace WindowsFormsApp1
                                     Form2 f2 = new Form2(); f2.Show(); break;
                                 case "szakember":
                                     Form3 f3 = new Form3(); f3.Show(); break;
+                                case "admin":
+                                    Admin a = new Admin(); a.Show(); break;
                                 default:
                                     MessageBox.Show("A felhasználó nem található az adatbázisban!"); break;
                             }

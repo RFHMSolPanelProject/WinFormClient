@@ -37,7 +37,8 @@ CREATE TABLE Felhasznalok
 INSERT INTO Felhasznalok VALUES
 (null, 'sfanni', '67ed8e80ce399188b15e9128b9777790ca6b6d1a63cb32d95a35f2a20d3ca00c', 'raktárvezető'),
 (null, 'kbazsi', '564770c2311d2a4b7ebde018ccda04cc6a8310abb20af40847a72ae281bb954b', 'raktáros'),
-(null, 'mbalint', '609773b69a4b62da915995a932d6cbe44fde7ff524f7cc707624c1c836638bb0', 'szakember');
+(null, 'mbalint', '609773b69a4b62da915995a932d6cbe44fde7ff524f7cc707624c1c836638bb0', 'szakember'),
+(null, 'tpeter', '9756d95070cf9904a1aec181975aab296d12928297f3d513c681a9e94f19c793', 'admin');
 
 CREATE TABLE Alkatreszek 
 (
