@@ -33,13 +33,13 @@
             this.button1 = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.missing_datagrid = new System.Windows.Forms.DataGridView();
+            this.miss_occ_datagrid = new System.Windows.Forms.DataGridView();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.missing_datagrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.miss_occ_datagrid)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -99,20 +99,23 @@
             this.panel2.Size = new System.Drawing.Size(661, 65);
             this.panel2.TabIndex = 1;
             // 
-            // missing_datagrid
+            // miss_occ_datagrid
             // 
-            this.missing_datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.missing_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.missing_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.miss_occ_datagrid.AllowUserToAddRows = false;
+            this.miss_occ_datagrid.AllowUserToDeleteRows = false;
+            this.miss_occ_datagrid.AllowUserToResizeRows = false;
+            this.miss_occ_datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.miss_occ_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.miss_occ_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.missing_datagrid.Location = new System.Drawing.Point(140, 61);
-            this.missing_datagrid.Name = "missing_datagrid";
-            this.missing_datagrid.ReadOnly = true;
-            this.missing_datagrid.Size = new System.Drawing.Size(661, 393);
-            this.missing_datagrid.TabIndex = 41;
+            this.miss_occ_datagrid.Location = new System.Drawing.Point(140, 61);
+            this.miss_occ_datagrid.Name = "miss_occ_datagrid";
+            this.miss_occ_datagrid.ReadOnly = true;
+            this.miss_occ_datagrid.Size = new System.Drawing.Size(661, 393);
+            this.miss_occ_datagrid.TabIndex = 41;
             // 
             // Column2
             // 
@@ -143,13 +146,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.missing_datagrid);
+            this.Controls.Add(this.miss_occ_datagrid);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Name = "Hiany";
             this.Text = "Hiany";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.missing_datagrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.miss_occ_datagrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -159,7 +162,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.DataGridView missing_datagrid;
+        private System.Windows.Forms.DataGridView miss_occ_datagrid;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

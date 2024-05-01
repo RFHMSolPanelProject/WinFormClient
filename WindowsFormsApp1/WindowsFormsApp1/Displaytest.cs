@@ -164,11 +164,6 @@ namespace WindowsFormsApp1
                 MessageBox.Show("Query error:" + e.Message);
             }*/
         }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
 

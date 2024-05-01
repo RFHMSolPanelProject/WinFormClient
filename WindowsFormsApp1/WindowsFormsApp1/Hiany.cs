@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e) => missing_datagrid.DataSource = GetMissingList();
+        private void button1_Click(object sender, EventArgs e) => miss_occ_datagrid.DataSource = GetMissingList();
 
         // B.3
         private DataTable GetMissingList()
@@ -35,7 +35,7 @@ namespace WindowsFormsApp1
             return dtMissing;
         }
 
-        private void button2_Click(object sender, EventArgs e) => missing_datagrid.DataSource = GetOccupiedList();
+        private void button2_Click(object sender, EventArgs e) => miss_occ_datagrid.DataSource = GetOccupiedList();
 
         // B.4
         private DataTable GetOccupiedList()

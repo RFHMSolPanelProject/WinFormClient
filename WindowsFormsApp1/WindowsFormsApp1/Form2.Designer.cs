@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+#pragma warning disable CS0618 // Type or member is obsolete
             this.pictureBoxArray1 = new Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray(this.components);
+#pragma warning restore CS0618 // Type or member is obsolete
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -109,7 +111,6 @@
             this.richTextBox1.Size = new System.Drawing.Size(171, 56);
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "Raktáros";
-            this.richTextBox1.TextChanged += new System.EventHandler(this.richTextBox1_TextChanged_1);
             // 
             // button3
             // 
@@ -239,7 +240,9 @@
         }
 
         #endregion
+#pragma warning disable CS0618 // Type or member is obsolete
         private Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray pictureBoxArray1;
+#pragma warning restore CS0618 // Type or member is obsolete
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.RichTextBox richTextBox1;
