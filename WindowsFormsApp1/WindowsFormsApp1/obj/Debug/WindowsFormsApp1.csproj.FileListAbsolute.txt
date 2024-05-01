@@ -238,7 +238,6 @@ Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Numerics
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\System.Threading.Tasks.Extensions.xml
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
-Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddComponent.resources
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Displaytest.resources
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form2.resources
@@ -249,9 +248,10 @@ Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ModifyPrices.resources
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Project.resources
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
-Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.RaktarRend.resources
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsF.A1EEDF9B.Up2Date
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddProject.resources
+Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ProjectList.resources

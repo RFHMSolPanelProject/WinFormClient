@@ -34,10 +34,6 @@
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.miss_occ_datagrid = new System.Windows.Forms.DataGridView();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.miss_occ_datagrid)).BeginInit();
             this.SuspendLayout();
@@ -106,40 +102,11 @@
             this.miss_occ_datagrid.AllowUserToResizeRows = false;
             this.miss_occ_datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.miss_occ_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.miss_occ_datagrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column2,
-            this.Column3,
-            this.Column4,
-            this.Column5});
             this.miss_occ_datagrid.Location = new System.Drawing.Point(140, 61);
             this.miss_occ_datagrid.Name = "miss_occ_datagrid";
             this.miss_occ_datagrid.ReadOnly = true;
             this.miss_occ_datagrid.Size = new System.Drawing.Size(661, 393);
             this.miss_occ_datagrid.TabIndex = 41;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Név";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Darab";
-            this.Column3.Name = "Column3";
-            this.Column3.ReadOnly = true;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Ár/darab";
-            this.Column4.Name = "Column4";
-            this.Column4.ReadOnly = true;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Státusz";
-            this.Column5.Name = "Column5";
-            this.Column5.ReadOnly = true;
             // 
             // Hiany
             // 
@@ -165,9 +132,5 @@
         private System.Windows.Forms.DataGridView miss_occ_datagrid;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

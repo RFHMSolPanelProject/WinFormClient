@@ -111,5 +111,10 @@ namespace WindowsFormsApp1
         {
             textBox2.PasswordChar = '*';
         }
+
+        private void pictureBox2_Click_1(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }
