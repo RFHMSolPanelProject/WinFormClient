@@ -102,10 +102,10 @@
             this.miss_occ_datagrid.AllowUserToResizeRows = false;
             this.miss_occ_datagrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.miss_occ_datagrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.miss_occ_datagrid.Location = new System.Drawing.Point(140, 61);
+            this.miss_occ_datagrid.Location = new System.Drawing.Point(142, 66);
             this.miss_occ_datagrid.Name = "miss_occ_datagrid";
             this.miss_occ_datagrid.ReadOnly = true;
-            this.miss_occ_datagrid.Size = new System.Drawing.Size(661, 393);
+            this.miss_occ_datagrid.Size = new System.Drawing.Size(659, 388);
             this.miss_occ_datagrid.TabIndex = 41;
             // 
             // Hiany
