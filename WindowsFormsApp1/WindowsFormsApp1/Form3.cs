@@ -33,17 +33,31 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AddProject ap = new AddProject();
+            ap.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            Form4 f4 = new Form4();
+            f4.Show();
         }
 
         private void Form3_Load_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Close();
+            Login l = new Login();
+            l.Show();
         }
     }
 }

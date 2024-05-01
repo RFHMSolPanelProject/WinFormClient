@@ -99,3 +99,5 @@ CREATE TABLE Hianyzoalkatreszek
 );
 
 ALTER TABLE Hianyzoalkatreszek AUTO_INCREMENT = 1000;
+
+ALTER TABLE projekt ADD FOREIGN KEY(Statusz) REFERENCES folyamatok(Folyamat);

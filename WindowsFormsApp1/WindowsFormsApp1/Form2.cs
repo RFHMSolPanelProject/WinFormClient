@@ -15,5 +15,12 @@ namespace WindowsFormsApp1
             ProjectList pl = new ProjectList();
             pl.Show();
         }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            Close();
+            Login l = new Login();
+            l.Show();
+        }
     }
 }

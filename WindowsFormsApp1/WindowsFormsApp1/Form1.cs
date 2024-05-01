@@ -28,7 +28,8 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Displaytest addComponent = new Displaytest();
+            addComponent.Show();
         }
 
         private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
