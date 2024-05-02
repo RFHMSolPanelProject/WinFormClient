@@ -175,11 +175,12 @@
             this.button7.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button7.Location = new System.Drawing.Point(59, 347);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(111, 45);
+            this.button7.Size = new System.Drawing.Size(102, 45);
             this.button7.TabIndex = 16;
-            this.button7.Text = "\r\nProjekt lezárása";
+            this.button7.Text = "Projekt lezárása";
             this.button7.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // pictureBox3
             // 
@@ -231,11 +232,11 @@
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button5.ForeColor = System.Drawing.Color.White;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(58, 288);
+            this.button5.Location = new System.Drawing.Point(58, 283);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(106, 47);
+            this.button5.Size = new System.Drawing.Size(103, 53);
             this.button5.TabIndex = 6;
-            this.button5.Text = "Munkavégzési idő és munkadíj";
+            this.button5.Text = "Munkavégzési idő\r\nés munkadíj";
             this.button5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
@@ -248,9 +249,9 @@
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button4.ForeColor = System.Drawing.Color.White;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button4.Location = new System.Drawing.Point(58, 230);
+            this.button4.Location = new System.Drawing.Point(58, 227);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(108, 47);
+            this.button4.Size = new System.Drawing.Size(103, 47);
             this.button4.TabIndex = 5;
             this.button4.Text = "Kiválasztott alkatrészek projekthez";
             this.button4.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -267,7 +268,7 @@
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.Location = new System.Drawing.Point(57, 182);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 45);
+            this.button3.Size = new System.Drawing.Size(104, 38);
             this.button3.TabIndex = 4;
             this.button3.Text = "Alkatrészek listázása";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -281,11 +282,11 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(57, 128);
+            this.button2.Location = new System.Drawing.Point(57, 130);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 39);
+            this.button2.Size = new System.Drawing.Size(104, 37);
             this.button2.TabIndex = 3;
-            this.button2.Text = "\r\nProjekt listázása";
+            this.button2.Text = "Projekt listázása";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -300,7 +301,7 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(58, 80);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 39);
+            this.button1.Size = new System.Drawing.Size(103, 39);
             this.button1.TabIndex = 2;
             this.button1.Text = "\r\nÚj projekt";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;

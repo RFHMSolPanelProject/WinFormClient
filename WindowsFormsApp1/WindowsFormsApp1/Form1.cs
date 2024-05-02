@@ -32,11 +32,6 @@ namespace WindowsFormsApp1
             addComponent.Show();
         }
 
-        private void notifyIcon1_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             Hiany h = new Hiany();
