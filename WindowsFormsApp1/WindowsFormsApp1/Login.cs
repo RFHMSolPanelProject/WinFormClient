@@ -20,43 +20,49 @@ namespace WindowsFormsApp1
             bool yes = false;
 
             string hashPWD = HashPWD(pwd);
+            string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
             string query = "SELECT Jelszo, Beosztas FROM felhasznalok WHERE Felhasznalonev = @Felhasznalonev";
 
-            using (var conn = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem"))
+            try
             {
-                using (var cmd = new MySqlCommand(query, conn))
+                using (var con = new MySqlConnection(conn))
                 {
-                    cmd.Parameters.AddWithValue("@Felhasznalonev", user);
-                    conn.Open();
-                    var dr = cmd.ExecuteReader();
-
-                    if (dr.Read())
+                    using (var cmd = new MySqlCommand(query, con))
                     {
-                        string storedHashPWD = dr["Jelszo"].ToString();
-                        string mastery = dr["Beosztas"].ToString();
+                        cmd.Parameters.AddWithValue("@Felhasznalonev", user);
+                        con.Open();
+                        var dr = cmd.ExecuteReader();
 
-                        if (hashPWD.Equals(storedHashPWD))
+                        if (dr.Read())
                         {
-                            yes = true;
+                            string storedHashPWD = dr["Jelszo"].ToString();
+                            string mastery = dr["Beosztas"].ToString();
 
-                            switch (mastery)
+                            if (hashPWD.Equals(storedHashPWD))
                             {
-                                case "raktárvezető":
-                                    Form1 f1 = new Form1(); f1.Show(); break;
-                                case "raktáros":
-                                    Form2 f2 = new Form2(); f2.Show(); break;
-                                case "szakember":
-                                    Form3 f3 = new Form3(); f3.Show(); break;
-                                case "admin":
-                                    Admin a = new Admin(); a.Show(); break;
-                                default:
-                                    MessageBox.Show("A felhasználó nem található az adatbázisban!"); break;
+                                switch (mastery)
+                                {
+                                    case "raktárvezető":
+                                        Form1 f1 = new Form1(); f1.Show(); break;
+                                    case "raktáros":
+                                        Form2 f2 = new Form2(); f2.Show(); break;
+                                    case "szakember":
+                                        Form3 f3 = new Form3(); f3.Show(); break;
+                                    case "admin":
+                                        Admin a = new Admin(); a.Show(); break;
+                                    default:
+                                        MessageBox.Show("A felhasználó nem található az adatbázisban!"); break;
+                                }
                             }
                         }
                     }
                 }
             }
-
+            catch (Exception e)
+            {
+                MessageBox.Show($"Hiba a kapcsolat létesítésekor: {e}");
+                Environment.Exit(1);
+            }
             return yes;
         }
 

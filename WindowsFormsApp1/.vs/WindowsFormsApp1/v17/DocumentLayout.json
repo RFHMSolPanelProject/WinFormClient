@@ -7,11 +7,15 @@
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|y:\\git\\winformclient\\windowsformsapp1\\windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|y:\\git\\winformclient\\windowsformsapp1\\windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -35,10 +39,6 @@
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\windowsformsapp1\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form4.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -47,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|y:\\git\\winformclient\\windowsformsapp1\\windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -140,14 +140,14 @@
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Login.cs",
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Login.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Login.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADIAAABLAAAA",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAIwCAAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T22:25:45.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Admin.cs",
               "DocumentMoniker": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Admin.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Admin.cs",
@@ -155,20 +155,18 @@
               "RelativeToolTip": "WindowsFormsApp1\\Admin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEwAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T22:03:38.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T22:03:38.188Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Admin.cs [Design]",
               "DocumentMoniker": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Admin.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Admin.cs",
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Admin.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T21:57:08.128Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-01T21:57:08.128Z"
             },
             {
               "$type": "Document",
@@ -284,8 +282,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Form2.cs",
               "ViewState": "AQIAAC4AAAAAAAAAAAAAwDEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T11:10:16.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T11:10:16.415Z"
             },
             {
               "$type": "Document",
@@ -300,7 +297,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Form3.cs",
               "DocumentMoniker": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Form3.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form3.cs",
@@ -308,8 +305,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Form3.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T16:49:20.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T16:49:20.393Z"
             },
             {
               "$type": "Document",
@@ -321,12 +317,11 @@
               "RelativeToolTip": "WindowsFormsApp1\\Project.Designer.cs",
               "ViewState": "AQIAAAsAAAAAAAAAAAAQwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T16:46:59.718Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T16:46:59.718Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ModifyPrices.cs",
               "DocumentMoniker": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\ModifyPrices.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\ModifyPrices.cs",
@@ -334,8 +329,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\ModifyPrices.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAQwBIAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:45:43.424Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T13:45:43.424Z"
             },
             {
               "$type": "Document",
@@ -347,8 +341,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Project.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAGUAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:55:44.386Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T13:55:44.386Z"
             },
             {
               "$type": "Document",
@@ -359,8 +352,7 @@
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Project.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Project.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:54:37.651Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T13:54:37.651Z"
             },
             {
               "$type": "Document",
@@ -372,32 +364,29 @@
               "RelativeToolTip": "WindowsFormsApp1\\ModifyPrices.Designer.cs",
               "ViewState": "AQIAAD8AAAAAAAAAAAAowBYAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:46:09.771Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T13:46:09.771Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ModifyPrices.cs [Design]",
               "DocumentMoniker": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\ModifyPrices.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\ModifyPrices.cs",
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\ModifyPrices.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\ModifyPrices.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:45:40.738Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T13:45:40.738Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Login.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Login.cs",
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Login.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:45:15.557Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T13:45:15.557Z"
             },
             {
               "$type": "Document",
@@ -409,8 +398,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Form2.Designer.cs",
               "ViewState": "AQIAAAwAAAAAAAAAAIAwwCAAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:44:46.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T13:44:46.48Z"
             },
             {
               "$type": "Document",
@@ -421,20 +409,18 @@
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Form2.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Form2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:42:09.259Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T13:42:09.259Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Form3.cs [Design]",
               "DocumentMoniker": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Form3.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form3.cs",
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Form3.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:39:11.735Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T13:39:11.735Z"
             },
             {
               "$type": "Document",
@@ -446,8 +432,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Form4.cs",
               "ViewState": "AQIAAFEAAAAAAAAAAIAwwGQAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:32:49.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T13:32:49.473Z"
             },
             {
               "$type": "Document",
@@ -458,8 +443,7 @@
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Form4.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Form4.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:32:11.217Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T13:32:11.217Z"
             },
             {
               "$type": "Document",
@@ -488,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Form1.cs",
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Form1.cs",
