@@ -67,11 +67,11 @@ namespace WindowsFormsApp1
         {
             try
             {
-                string query = "INSERT INTO Raktar(Sor, Oszlop, Polc) VALUES (@r, @c, @l)";
+                string query = "INSERT INTO Raktar(Sor, Oszlop, Polc) VALUES (@Sor, @Oszlop, @Polc)";
                 var cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@r", r);
-                cmd.Parameters.AddWithValue("@c", c);
-                cmd.Parameters.AddWithValue("@l", l);
+                cmd.Parameters.AddWithValue("@Sor", r);
+                cmd.Parameters.AddWithValue("@Oszlop", c);
+                cmd.Parameters.AddWithValue("@Polc", l);
                 cmd.ExecuteNonQuery();
             } catch(Exception e)
             {

@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-#pragma warning disable CS0618 // Type or member is obsolete
             this.pictureBoxArray1 = new Microsoft.VisualBasic.Compatibility.VB6.PictureBoxArray(this.components);
-#pragma warning restore CS0618 // Type or member is obsolete
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -122,7 +120,7 @@
             this.button3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.Location = new System.Drawing.Point(55, 191);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(121, 62);
+            this.button3.Size = new System.Drawing.Size(121, 53);
             this.button3.TabIndex = 4;
             this.button3.Text = "Alkatrészek\r\nútvonal-\r\noptimalizálása";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -137,9 +135,9 @@
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(58, 131);
+            this.button2.Location = new System.Drawing.Point(58, 125);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(121, 68);
+            this.button2.Size = new System.Drawing.Size(112, 66);
             this.button2.TabIndex = 3;
             this.button2.Text = "Projekthez tartozó alkatrészek listázása";
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
@@ -156,7 +154,7 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(55, 79);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 51);
+            this.button1.Size = new System.Drawing.Size(115, 40);
             this.button1.TabIndex = 2;
             this.button1.Text = "Projektek listázása";
             this.button1.TextAlign = System.Drawing.ContentAlignment.TopLeft;

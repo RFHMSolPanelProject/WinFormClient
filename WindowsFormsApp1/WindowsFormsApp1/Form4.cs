@@ -16,12 +16,12 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
         private void Forms4_Load(object sender, EventArgs e)
         {
-            
 
         }
-       
+
         private void Form4_Load(object sender, EventArgs e)
         {
             datagrid.AutoGenerateColumns = false;
@@ -34,12 +34,13 @@ namespace WindowsFormsApp1
             datagrid.Columns[2].Name = "Munkadij";
             datagrid.Columns[2].HeaderText = "Munkadij";
             datagrid.Columns[2].DataPropertyName = "Munkadij";
-        
+
 
             // Adatok betöltése DataGridView-be
             LoadData();
         }
         private void button2_Click(object sender, EventArgs e) => LoadData();
+
         private void LoadData()
         {
             datagrid.AutoGenerateColumns = false;
@@ -52,7 +53,7 @@ namespace WindowsFormsApp1
             datagrid.Columns[2].Name = "Munkadij";
             datagrid.Columns[2].HeaderText = "Munkadij";
             datagrid.Columns[2].DataPropertyName = "Munkadij";
-           
+
             try
             {
                 con.Open();
@@ -89,6 +90,7 @@ namespace WindowsFormsApp1
         }
 
         private void button3_Click(object sender, EventArgs e) => RunQuery();
+
         private void RunQuery()
         {
             MySqlCommand cmd = new MySqlCommand("INSERT INTO Munkavegzes(ProjektNev,Munkavegzes,Munkadij) VALUES (@ProjektNev,@Munkavegzes, @Munkadij)", con);
@@ -97,13 +99,9 @@ namespace WindowsFormsApp1
             cmd.Parameters.AddWithValue("@Munkavegzes", textBox3.Text);
             cmd.Parameters.AddWithValue("@Munkadij", textBox5.Text);
 
-
-
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
         }
-
-      
     }
 }
