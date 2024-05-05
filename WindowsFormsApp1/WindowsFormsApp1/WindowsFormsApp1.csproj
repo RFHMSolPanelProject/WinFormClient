@@ -168,6 +168,7 @@
     <Compile Include="ModifyPrices.Designer.cs">
       <DependentUpon>ModifyPrices.cs</DependentUpon>
     </Compile>
+    <Compile Include="Optimizer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Project.cs">
       <SubType>Form</SubType>

@@ -48,11 +48,6 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Close();
@@ -67,6 +62,11 @@ namespace WindowsFormsApp1
         }
 
         private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }
