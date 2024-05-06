@@ -26,7 +26,7 @@ namespace WindowsFormsApp1
                     {
                         cmd.Parameters.AddWithValue("@Felhasznalonev", textBox5.Text);
                         cmd.Parameters.AddWithValue("@Jelszo", HashPWD(textBox2.Text));
-                        cmd.Parameters.AddWithValue("@Beosztas", textBox4.Text);
+                        cmd.Parameters.AddWithValue("@Beosztas", comboBox1.SelectedIndex.ToString());
 
                         con.Open();
                         cmd.ExecuteNonQuery();
@@ -73,7 +73,7 @@ namespace WindowsFormsApp1
 
         private void Check()
         {
-            bool isHidden = textBox5.Text.Trim() != "" && textBox2.Text.Trim() != "" && textBox4.Text.Trim() != "";
+            bool isHidden = textBox5.Text.Trim() != "" && textBox2.Text.Trim() != "" && comboBox1.SelectedItem != null;
             button2.Visible = isHidden;
         }
     }
