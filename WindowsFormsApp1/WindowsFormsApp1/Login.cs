@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
             bool yes = false;
 
             string hashPWD = HashPWD(pwd);
-            string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
+            string conn = @"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem";
             string query = "SELECT Jelszo, Beosztas FROM felhasznalok WHERE Felhasznalonev = @Felhasznalonev";
 
             try
@@ -82,7 +82,7 @@ namespace WindowsFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void LoginButton_Click(object sender, EventArgs e)
         {
             if (DateTime.Now < lockoutEnd)
             {
@@ -90,8 +90,8 @@ namespace WindowsFormsApp1
                 return;
             }
 
-            string user = textBox1.Text;
-            string pwd = textBox2.Text;
+            string user = UserField.Text;
+            string pwd = PasswordField.Text;
 
             if (AuthUser(user, pwd))
             {
@@ -110,19 +110,34 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void CloseBtnPic_Click(object sender, EventArgs e)
         {
             Environment.Exit(0);
         }
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
+        private void PasswordField_TextChanged(object sender, EventArgs e)
         {
-            textBox2.PasswordChar = '*';
+            PasswordField.PasswordChar = '*';
         }
 
-        private void pictureBox2_Click_1(object sender, EventArgs e)
+        private void CloseBtnPic_Click_1(object sender, EventArgs e)
         {
             Environment.Exit(0);
+        }
+
+        private void UserField_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserField_MouseClick(object sender, MouseEventArgs e)
+        {
+            UserField.Text = "";
+        }
+
+        private void PasswordField_MouseClick(object sender, MouseEventArgs e)
+        {
+            PasswordField.Text = "";
         }
     }
 }

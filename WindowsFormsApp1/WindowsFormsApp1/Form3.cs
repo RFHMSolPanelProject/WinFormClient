@@ -26,18 +26,35 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
+       
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void AddProjectBtn_Click(object sender, EventArgs e) //Új project
         {
             AddProject ap = new AddProject();
             ap.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void ListProjectBtn_Click(object sender, EventArgs e) //
+        {
+            ProjectList pl = new ProjectList();
+            pl.Show();
+        }
+
+        private void ListPartBtn_Click(object sender, EventArgs e)
+        {
+            Displaytest displaytest = new Displaytest();
+            displaytest.Show();
+        }
+
+        private void ChoosedPartBtn_Click(object sender, EventArgs e)
+        {
+            PartToProject partToProject = new PartToProject();
+            partToProject.Show();
+        }
+
+       
+
+        private void PriceCalcBtn_Click(object sender, EventArgs e)
         {
             Form4 f4 = new Form4();
             f4.Show();
@@ -48,27 +65,20 @@ namespace WindowsFormsApp1
 
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void ClosePictureBox_Click(object sender, EventArgs e)
         {
             Close();
             Login l = new Login();
             l.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            ProjectList pl = new ProjectList();
-            pl.Show();
-        }
+        
 
         private void button7_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
+//Raktárvezető menü
 namespace WindowsFormsApp1
 {
     public partial class Form1 : Form
@@ -45,9 +46,10 @@ namespace WindowsFormsApp1
             l.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void IncomingStuffBtn_Click(object sender, EventArgs e)
         {
-
+            IncomingPart incomingPart = new IncomingPart();
+            incomingPart.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)

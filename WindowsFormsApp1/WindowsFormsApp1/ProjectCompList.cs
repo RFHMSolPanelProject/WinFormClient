@@ -7,7 +7,7 @@ namespace WindowsFormsApp1
 {
     public partial class ProjectCompList : Form
     {
-        private readonly string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
+        private readonly string conn = @"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem";
         private readonly string query = "SELECT * FROM projektraktar";
         
         public ProjectCompList()

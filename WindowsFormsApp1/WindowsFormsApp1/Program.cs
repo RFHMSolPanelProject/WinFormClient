@@ -20,3 +20,10 @@ namespace WindowsFormsApp1
         }
     }
 }
+
+
+/*
+ alma123, ajtó456, és egér789
+admin: tpeter
+            177013
+ */

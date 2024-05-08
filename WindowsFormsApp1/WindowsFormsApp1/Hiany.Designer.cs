@@ -40,7 +40,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.richTextBox1);
@@ -52,11 +52,12 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(9, 210);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 51);
+            this.button2.Size = new System.Drawing.Size(111, 72);
             this.button2.TabIndex = 43;
             this.button2.Text = "Lefoglalt alkatrészek listázása";
             this.button2.UseVisualStyleBackColor = false;
@@ -64,11 +65,12 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.LavenderBlush;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(9, 125);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 51);
+            this.button1.Size = new System.Drawing.Size(111, 65);
             this.button1.TabIndex = 43;
             this.button1.Text = "Hiányzó alkatrészek listázása";
             this.button1.UseVisualStyleBackColor = false;
@@ -76,7 +78,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.richTextBox1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
@@ -88,7 +90,7 @@
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel2.ForeColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(142, 3);
             this.panel2.Name = "panel2";

@@ -3,11 +3,13 @@ using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+//alkatrész hozzáadása, listázása
+
 namespace WindowsFormsApp1
 {
     public partial class Displaytest : Form
     {
-        MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
+        MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem");
         MySqlCommand cmd;
         MySqlDataAdapter adapter;
         DataTable table;
@@ -39,22 +41,28 @@ namespace WindowsFormsApp1
             datagrid.Columns[0].Name = "ANev";
             datagrid.Columns[0].HeaderText = "Név";
             datagrid.Columns[0].DataPropertyName = "ANev";
+
             datagrid.Columns[1].Name = "Maxdb";
             datagrid.Columns[1].HeaderText = "Maxdb";
             datagrid.Columns[1].DataPropertyName = "Maxdb";
+
             datagrid.Columns[2].Name = "Darab";
             datagrid.Columns[2].HeaderText = "Darab";
             datagrid.Columns[2].DataPropertyName = "Darab";
+
             datagrid.Columns[3].Name = "Ar";
             datagrid.Columns[3].HeaderText = "Ár";
             datagrid.Columns[3].DataPropertyName = "Ar";
 
+            datagrid.Columns[4].Name = "Statusz";
+            datagrid.Columns[4].HeaderText = "Statusz";
+            datagrid.Columns[4].DataPropertyName = "Statusz";
             // Adatok betöltése DataGridView-be
             LoadData();
         }
 
 
-        private void button2_Click(object sender, EventArgs e)      //Listáz
+        private void ListBtn_Click(object sender, EventArgs e)      //Listáz
         => LoadData();
 
         private void LoadData()
@@ -63,15 +71,24 @@ namespace WindowsFormsApp1
             datagrid.Columns[0].Name = "ANev";
             datagrid.Columns[0].HeaderText = "Név";
             datagrid.Columns[0].DataPropertyName = "ANev";
+
             datagrid.Columns[1].Name = "Maxdb";
             datagrid.Columns[1].HeaderText = "Maxdb";
             datagrid.Columns[1].DataPropertyName = "Maxdb";
+
             datagrid.Columns[2].Name = "Darab";
             datagrid.Columns[2].HeaderText = "Darab";
             datagrid.Columns[2].DataPropertyName = "Darab";
+
             datagrid.Columns[3].Name = "Ar";
             datagrid.Columns[3].HeaderText = "Ár";
             datagrid.Columns[3].DataPropertyName = "Ar";
+
+            datagrid.Columns[4].Name = "Statusz";
+            datagrid.Columns[4].HeaderText = "Statusz";
+            datagrid.Columns[4].DataPropertyName = "Statusz";
+
+
             try
             {
                 con.Open();
@@ -92,19 +109,17 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)      //Hozzáad
+        private void AddBtn_Click(object sender, EventArgs e)      //Hozzáad
         => runQuery();
         private void runQuery()
         {
-           //MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
+            //MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
+            con.Open();
             MySqlCommand cmd = new MySqlCommand("INSERT INTO Alkatreszek(ANev, Maxdb, Darab, Ar) VALUES (@ANev, @Maxdb, @Darab, @Ar)", con);
-
             cmd.Parameters.AddWithValue("@ANev", textBox2.Text);    //Anev
             cmd.Parameters.AddWithValue("@Maxdb", textBox3.Text);   //Maxdb
             cmd.Parameters.AddWithValue("@Darab", textBox5.Text);   //Db
-            cmd.Parameters.AddWithValue("@Ar", textBox7.Text);      //Ár
-
-            con.Open();
+            cmd.Parameters.AddWithValue("@Ar", textBox7.Text);      //Ár       
             cmd.ExecuteNonQuery();
             con.Close();
             /* MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");

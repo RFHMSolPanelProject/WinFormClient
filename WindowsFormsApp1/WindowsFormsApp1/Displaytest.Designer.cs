@@ -44,10 +44,11 @@
             this.Darab = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ar = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.componentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.ListBtn = new System.Windows.Forms.Button();
+            this.AddBtn = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Statusz = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.componentsBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
@@ -56,7 +57,7 @@
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(340, 241);
+            this.textBox5.Location = new System.Drawing.Point(258, 239);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(157, 31);
             this.textBox5.TabIndex = 34;
@@ -67,7 +68,7 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(183, 246);
+            this.textBox6.Location = new System.Drawing.Point(101, 244);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(151, 24);
             this.textBox6.TabIndex = 33;
@@ -77,7 +78,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(340, 193);
+            this.textBox3.Location = new System.Drawing.Point(258, 191);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(157, 31);
             this.textBox3.TabIndex = 32;
@@ -88,7 +89,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox4.Enabled = false;
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox4.Location = new System.Drawing.Point(183, 198);
+            this.textBox4.Location = new System.Drawing.Point(101, 196);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(151, 24);
             this.textBox4.TabIndex = 31;
@@ -99,7 +100,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(340, 149);
+            this.textBox2.Location = new System.Drawing.Point(258, 147);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(157, 31);
             this.textBox2.TabIndex = 30;
@@ -110,7 +111,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(183, 154);
+            this.textBox1.Location = new System.Drawing.Point(101, 152);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(151, 24);
             this.textBox1.TabIndex = 29;
@@ -119,7 +120,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.textBox9.BackColor = System.Drawing.Color.CornflowerBlue;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox9.ForeColor = System.Drawing.Color.White;
@@ -132,7 +133,7 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox7.Location = new System.Drawing.Point(340, 290);
+            this.textBox7.Location = new System.Drawing.Point(258, 288);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(157, 31);
             this.textBox7.TabIndex = 38;
@@ -143,7 +144,7 @@
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox8.Location = new System.Drawing.Point(183, 295);
+            this.textBox8.Location = new System.Drawing.Point(101, 293);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(151, 24);
             this.textBox8.TabIndex = 37;
@@ -159,12 +160,13 @@
             this.ANev,
             this.Maxdb,
             this.Darab,
-            this.Ar});
+            this.Ar,
+            this.Statusz});
             this.datagrid.DataSource = this.componentsBindingSource;
-            this.datagrid.Location = new System.Drawing.Point(554, 69);
+            this.datagrid.Location = new System.Drawing.Point(468, 69);
             this.datagrid.Name = "datagrid";
             this.datagrid.ReadOnly = true;
-            this.datagrid.Size = new System.Drawing.Size(354, 479);
+            this.datagrid.Size = new System.Drawing.Size(440, 479);
             this.datagrid.TabIndex = 40;
             this.datagrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_CellContentClick);
             // 
@@ -196,37 +198,37 @@
             // 
             this.componentsBindingSource.DataMember = "Components";
             // 
-            // button2
+            // ListBtn
             // 
-            this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(389, 349);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 39);
-            this.button2.TabIndex = 41;
-            this.button2.Text = "Listáz";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ListBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ListBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.ListBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ListBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ListBtn.Location = new System.Drawing.Point(345, 423);
+            this.ListBtn.Name = "ListBtn";
+            this.ListBtn.Size = new System.Drawing.Size(108, 39);
+            this.ListBtn.TabIndex = 41;
+            this.ListBtn.Text = "Listáz";
+            this.ListBtn.UseVisualStyleBackColor = false;
+            this.ListBtn.Click += new System.EventHandler(this.ListBtn_Click);
             // 
-            // button3
+            // AddBtn
             // 
-            this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(183, 350);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 38);
-            this.button3.TabIndex = 42;
-            this.button3.Text = "Hozzáad";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.AddBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.AddBtn.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
+            this.AddBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.AddBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.AddBtn.Location = new System.Drawing.Point(142, 424);
+            this.AddBtn.Name = "AddBtn";
+            this.AddBtn.Size = new System.Drawing.Size(110, 38);
+            this.AddBtn.TabIndex = 42;
+            this.AddBtn.Text = "Hozzáad";
+            this.AddBtn.UseVisualStyleBackColor = false;
+            this.AddBtn.Click += new System.EventHandler(this.AddBtn_Click);
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel3.Controls.Add(this.textBox9);
             this.panel3.Location = new System.Drawing.Point(-2, 0);
             this.panel3.Name = "panel3";
@@ -235,11 +237,18 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.panel1.Location = new System.Drawing.Point(0, 58);
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Location = new System.Drawing.Point(0, 61);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(175, 503);
+            this.panel1.Size = new System.Drawing.Size(103, 500);
             this.panel1.TabIndex = 44;
+            // 
+            // Statusz
+            // 
+            this.Statusz.HeaderText = "Statusz";
+            this.Statusz.Name = "Statusz";
+            this.Statusz.ReadOnly = true;
             // 
             // Displaytest
             // 
@@ -249,8 +258,8 @@
             this.ClientSize = new System.Drawing.Size(920, 560);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.AddBtn);
+            this.Controls.Add(this.ListBtn);
             this.Controls.Add(this.datagrid);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox6);
@@ -282,13 +291,13 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button ListBtn;
         private System.Windows.Forms.BindingSource componentsBindingSource;
         private System.Windows.Forms.DataGridViewTextBoxColumn componentDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn maxDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn currentNumberDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button AddBtn;
         private System.Windows.Forms.DataGridView datagrid;
         private System.Windows.Forms.DataGridViewTextBoxColumn ANev;
         private System.Windows.Forms.DataGridViewTextBoxColumn Maxdb;
@@ -296,5 +305,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Ar;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Statusz;
     }
 }

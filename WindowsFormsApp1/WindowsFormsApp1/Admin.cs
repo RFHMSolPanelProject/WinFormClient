@@ -8,7 +8,7 @@ namespace WindowsFormsApp1
 {
     public partial class Admin : Form
     {
-        string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
+        string conn = @"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem";
         string query = "INSERT INTO felhasznalok(Felhasznalonev, Jelszo, Beosztas) VALUES (@Felhasznalonev, @Jelszo, @Beosztas)";
 
         public Admin()

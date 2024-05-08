@@ -3,13 +3,16 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 
+
+//Raktáros menü
+
 namespace WindowsFormsApp1
 {
     public partial class Form2 : Form
     {
         private MySqlConnection conn;
         private const string conn_str =
-            @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
+            @"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem";
 
         public Form2()
         {

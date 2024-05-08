@@ -36,7 +36,7 @@
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.IncomingStuffBtn = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
@@ -66,7 +66,7 @@
             this.panel1.Controls.Add(this.pictureBox5);
             this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.IncomingStuffBtn);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.button2);
             this.panel1.Controls.Add(this.button1);
@@ -154,22 +154,22 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button5
+            // IncomingStuffBtn
             // 
-            this.button5.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.Location = new System.Drawing.Point(59, 241);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(111, 38);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Bejövő alapanyag";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.IncomingStuffBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.IncomingStuffBtn.FlatAppearance.BorderSize = 0;
+            this.IncomingStuffBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.IncomingStuffBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.IncomingStuffBtn.ForeColor = System.Drawing.Color.White;
+            this.IncomingStuffBtn.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.IncomingStuffBtn.Location = new System.Drawing.Point(59, 241);
+            this.IncomingStuffBtn.Name = "IncomingStuffBtn";
+            this.IncomingStuffBtn.Size = new System.Drawing.Size(111, 38);
+            this.IncomingStuffBtn.TabIndex = 6;
+            this.IncomingStuffBtn.Text = "Bejövő alapanyag";
+            this.IncomingStuffBtn.TextAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.IncomingStuffBtn.UseVisualStyleBackColor = false;
+            this.IncomingStuffBtn.Click += new System.EventHandler(this.IncomingStuffBtn_Click);
             // 
             // button3
             // 
@@ -308,7 +308,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button IncomingStuffBtn;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.RichTextBox richTextBox1;

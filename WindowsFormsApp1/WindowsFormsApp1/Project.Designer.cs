@@ -55,7 +55,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel3.Controls.Add(this.textBox9);
             this.panel3.Location = new System.Drawing.Point(-1, 0);
             this.panel3.Name = "panel3";
@@ -64,7 +64,7 @@
             // 
             // textBox9
             // 
-            this.textBox9.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox9.BackColor = System.Drawing.Color.CornflowerBlue;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox9.ForeColor = System.Drawing.Color.White;
@@ -78,7 +78,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.CornflowerBlue;
             this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(203, 370);
             this.button3.Name = "button3";
@@ -92,7 +92,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.button2.ForeColor = System.Drawing.Color.White;
             this.button2.Location = new System.Drawing.Point(457, 369);
             this.button2.Name = "button2";
@@ -169,7 +169,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Location = new System.Drawing.Point(0, 63);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(176, 506);
@@ -210,7 +210,7 @@
             this.datagrid.DataSource = this.bindingSource1;
             this.datagrid.Location = new System.Drawing.Point(577, 163);
             this.datagrid.Name = "datagrid";
-            this.datagrid.Size = new System.Drawing.Size(441, 195);
+            this.datagrid.Size = new System.Drawing.Size(441, 245);
             this.datagrid.TabIndex = 60;
             // 
             // ProjektKod

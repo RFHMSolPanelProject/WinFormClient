@@ -28,64 +28,67 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.UserField = new System.Windows.Forms.TextBox();
+            this.PasswordField = new System.Windows.Forms.TextBox();
+            this.LoginButton = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.CloseBtnPic = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.LoginMainPic = new System.Windows.Forms.PictureBox();
+            this.UserLabelPic = new System.Windows.Forms.PictureBox();
+            this.PasswordLabelPic = new System.Windows.Forms.PictureBox();
+            this.LoginBtnPic = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseBtnPic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginMainPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserLabelPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PasswordLabelPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginBtnPic)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // UserField
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox1.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBox1.Location = new System.Drawing.Point(319, 340);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 29);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "Felhasználónév";
+            this.UserField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.UserField.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.UserField.Location = new System.Drawing.Point(319, 340);
+            this.UserField.Name = "UserField";
+            this.UserField.Size = new System.Drawing.Size(260, 29);
+            this.UserField.TabIndex = 0;
+            this.UserField.Text = "Felhasználónév";
+            this.UserField.MouseClick += new System.Windows.Forms.MouseEventHandler(this.UserField_MouseClick);
+            this.UserField.TextChanged += new System.EventHandler(this.UserField_TextChanged);
             // 
-            // textBox2
+            // PasswordField
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.textBox2.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.textBox2.Location = new System.Drawing.Point(319, 382);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 29);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.Text = "Jelszó";
+            this.PasswordField.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.PasswordField.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.PasswordField.Location = new System.Drawing.Point(319, 382);
+            this.PasswordField.Name = "PasswordField";
+            this.PasswordField.Size = new System.Drawing.Size(260, 29);
+            this.PasswordField.TabIndex = 1;
+            this.PasswordField.Text = "Jelszó";
+            this.PasswordField.MouseClick += new System.Windows.Forms.MouseEventHandler(this.PasswordField_MouseClick);
             // 
-            // button1
+            // LoginButton
             // 
-            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button1.Location = new System.Drawing.Point(319, 417);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(260, 32);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Bejelentkezés";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.LoginButton.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.LoginButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.LoginButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LoginButton.Location = new System.Drawing.Point(319, 417);
+            this.LoginButton.Name = "LoginButton";
+            this.LoginButton.Size = new System.Drawing.Size(260, 32);
+            this.LoginButton.TabIndex = 4;
+            this.LoginButton.Text = "Bejelentkezés";
+            this.LoginButton.UseVisualStyleBackColor = false;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.CloseBtnPic);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox6);
@@ -94,16 +97,16 @@
             this.panel2.Size = new System.Drawing.Size(923, 65);
             this.panel2.TabIndex = 8;
             // 
-            // pictureBox2
+            // CloseBtnPic
             // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.Exit;
-            this.pictureBox2.Location = new System.Drawing.Point(884, 0);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(39, 38);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            this.CloseBtnPic.Image = global::WindowsFormsApp1.Properties.Resources.Exit;
+            this.CloseBtnPic.Location = new System.Drawing.Point(884, 0);
+            this.CloseBtnPic.Name = "CloseBtnPic";
+            this.CloseBtnPic.Size = new System.Drawing.Size(39, 38);
+            this.CloseBtnPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.CloseBtnPic.TabIndex = 10;
+            this.CloseBtnPic.TabStop = false;
+            this.CloseBtnPic.Click += new System.EventHandler(this.CloseBtnPic_Click_1);
             // 
             // label2
             // 
@@ -136,49 +139,49 @@
             this.pictureBox6.TabIndex = 0;
             this.pictureBox6.TabStop = false;
             // 
-            // pictureBox1
+            // LoginMainPic
             // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.mini_icon;
-            this.pictureBox1.Location = new System.Drawing.Point(319, 108);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(260, 214);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 9;
-            this.pictureBox1.TabStop = false;
+            this.LoginMainPic.Image = global::WindowsFormsApp1.Properties.Resources.mini_icon;
+            this.LoginMainPic.Location = new System.Drawing.Point(319, 108);
+            this.LoginMainPic.Name = "LoginMainPic";
+            this.LoginMainPic.Size = new System.Drawing.Size(260, 214);
+            this.LoginMainPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.LoginMainPic.TabIndex = 9;
+            this.LoginMainPic.TabStop = false;
             // 
-            // pictureBox5
+            // UserLabelPic
             // 
-            this.pictureBox5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox5.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.email;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(277, 340);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(25, 30);
-            this.pictureBox5.TabIndex = 7;
-            this.pictureBox5.TabStop = false;
+            this.UserLabelPic.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.UserLabelPic.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.email;
+            this.UserLabelPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.UserLabelPic.Location = new System.Drawing.Point(277, 340);
+            this.UserLabelPic.Name = "UserLabelPic";
+            this.UserLabelPic.Size = new System.Drawing.Size(25, 30);
+            this.UserLabelPic.TabIndex = 7;
+            this.UserLabelPic.TabStop = false;
             // 
-            // pictureBox4
+            // PasswordLabelPic
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox4.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._lock;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(276, 382);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(26, 29);
-            this.pictureBox4.TabIndex = 6;
-            this.pictureBox4.TabStop = false;
+            this.PasswordLabelPic.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.PasswordLabelPic.BackgroundImage = global::WindowsFormsApp1.Properties.Resources._lock;
+            this.PasswordLabelPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PasswordLabelPic.Location = new System.Drawing.Point(276, 382);
+            this.PasswordLabelPic.Name = "PasswordLabelPic";
+            this.PasswordLabelPic.Size = new System.Drawing.Size(26, 29);
+            this.PasswordLabelPic.TabIndex = 6;
+            this.PasswordLabelPic.TabStop = false;
             // 
-            // pictureBox3
+            // LoginBtnPic
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox3.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.login_icon;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(276, 417);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(25, 31);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBox3.TabIndex = 5;
-            this.pictureBox3.TabStop = false;
+            this.LoginBtnPic.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.LoginBtnPic.BackgroundImage = global::WindowsFormsApp1.Properties.Resources.login_icon;
+            this.LoginBtnPic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.LoginBtnPic.Location = new System.Drawing.Point(276, 417);
+            this.LoginBtnPic.Name = "LoginBtnPic";
+            this.LoginBtnPic.Size = new System.Drawing.Size(25, 31);
+            this.LoginBtnPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.LoginBtnPic.TabIndex = 5;
+            this.LoginBtnPic.TabStop = false;
             // 
             // Login
             // 
@@ -186,25 +189,25 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(923, 560);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.LoginMainPic);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.UserLabelPic);
+            this.Controls.Add(this.PasswordLabelPic);
+            this.Controls.Add(this.LoginBtnPic);
+            this.Controls.Add(this.LoginButton);
+            this.Controls.Add(this.PasswordField);
+            this.Controls.Add(this.UserField);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.Text = "Login";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseBtnPic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginMainPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserLabelPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PasswordLabelPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.LoginBtnPic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,17 +215,17 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox UserField;
+        private System.Windows.Forms.TextBox PasswordField;
+        private System.Windows.Forms.Button LoginButton;
+        private System.Windows.Forms.PictureBox LoginBtnPic;
+        private System.Windows.Forms.PictureBox PasswordLabelPic;
+        private System.Windows.Forms.PictureBox UserLabelPic;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox LoginMainPic;
+        private System.Windows.Forms.PictureBox CloseBtnPic;
     }
 }

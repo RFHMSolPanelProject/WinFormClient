@@ -7,7 +7,7 @@ namespace WindowsFormsApp1
 {
     public partial class Project : Form
     {
-        readonly MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
+        readonly MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem");
         MySqlCommand cmd;
         MySqlDataAdapter adapter;
         DataTable table;

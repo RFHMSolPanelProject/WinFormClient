@@ -28,113 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CancelBtn = new System.Windows.Forms.Button();
+            this.ModifyPriceBtn = new System.Windows.Forms.Button();
+            this.PartNameField = new System.Windows.Forms.TextBox();
+            this.PartNameLabel = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.PriceField = new System.Windows.Forms.TextBox();
+            this.PriceLabel = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button3
+            // CancelBtn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button3.Location = new System.Drawing.Point(529, 315);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(103, 33);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "Mégse";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.CancelBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.CancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CancelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.CancelBtn.Location = new System.Drawing.Point(275, 256);
+            this.CancelBtn.Name = "CancelBtn";
+            this.CancelBtn.Size = new System.Drawing.Size(103, 33);
+            this.CancelBtn.TabIndex = 23;
+            this.CancelBtn.Text = "Mégse";
+            this.CancelBtn.UseVisualStyleBackColor = false;
+            this.CancelBtn.Click += new System.EventHandler(this.CancelBtn_Click);
             // 
-            // button1
+            // ModifyPriceBtn
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.button1.Location = new System.Drawing.Point(209, 315);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 33);
-            this.button1.TabIndex = 22;
-            this.button1.Text = "Hozzáad";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.ModifyPriceBtn.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ModifyPriceBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ModifyPriceBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.ModifyPriceBtn.Location = new System.Drawing.Point(556, 256);
+            this.ModifyPriceBtn.Name = "ModifyPriceBtn";
+            this.ModifyPriceBtn.Size = new System.Drawing.Size(132, 33);
+            this.ModifyPriceBtn.TabIndex = 22;
+            this.ModifyPriceBtn.Text = "Ármódosítás";
+            this.ModifyPriceBtn.UseVisualStyleBackColor = false;
+            this.ModifyPriceBtn.Click += new System.EventHandler(this.ModifyPriceBtn_Click);
             // 
-            // textBox5
+            // PartNameField
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox5.Location = new System.Drawing.Point(424, 207);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(208, 31);
-            this.textBox5.TabIndex = 21;
+            this.PartNameField.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PartNameField.Location = new System.Drawing.Point(424, 115);
+            this.PartNameField.Name = "PartNameField";
+            this.PartNameField.Size = new System.Drawing.Size(208, 31);
+            this.PartNameField.TabIndex = 17;
             // 
-            // textBox6
+            // PartNameLabel
             // 
-            this.textBox6.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox6.Location = new System.Drawing.Point(209, 212);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox6.Size = new System.Drawing.Size(193, 24);
-            this.textBox6.TabIndex = 20;
-            this.textBox6.Text = "Darabszám:";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox3.Location = new System.Drawing.Point(424, 159);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(208, 31);
-            this.textBox3.TabIndex = 19;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox4.Location = new System.Drawing.Point(209, 165);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox4.Size = new System.Drawing.Size(193, 24);
-            this.textBox4.TabIndex = 18;
-            this.textBox4.Text = "Max. darabszám:";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox2.Location = new System.Drawing.Point(424, 115);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(208, 31);
-            this.textBox2.TabIndex = 17;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox1.Location = new System.Drawing.Point(209, 120);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox1.Size = new System.Drawing.Size(193, 24);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.Text = "Terméknév:";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.PartNameLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.PartNameLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PartNameLabel.Enabled = false;
+            this.PartNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PartNameLabel.Location = new System.Drawing.Point(275, 120);
+            this.PartNameLabel.Name = "PartNameLabel";
+            this.PartNameLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.PartNameLabel.Size = new System.Drawing.Size(127, 24);
+            this.PartNameLabel.TabIndex = 16;
+            this.PartNameLabel.Text = "Alkatrésznév:";
+            this.PartNameLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.PartNameLabel.TextChanged += new System.EventHandler(this.PartNameLabel_TextChanged);
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel2.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel2.Location = new System.Drawing.Point(143, -2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(661, 65);
@@ -142,7 +99,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.panel1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.panel1.Controls.Add(this.richTextBox1);
             this.panel1.Location = new System.Drawing.Point(-4, -2);
             this.panel1.Name = "panel1";
@@ -151,7 +108,7 @@
             // 
             // richTextBox1
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.richTextBox1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.richTextBox1.ForeColor = System.Drawing.Color.Transparent;
@@ -161,43 +118,39 @@
             this.richTextBox1.TabIndex = 2;
             this.richTextBox1.Text = "Raktár";
             // 
-            // textBox7
+            // PriceField
             // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox7.Location = new System.Drawing.Point(424, 256);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(208, 31);
-            this.textBox7.TabIndex = 25;
+            this.PriceField.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PriceField.Location = new System.Drawing.Point(424, 166);
+            this.PriceField.Name = "PriceField";
+            this.PriceField.Size = new System.Drawing.Size(208, 31);
+            this.PriceField.TabIndex = 25;
             // 
-            // textBox8
+            // PriceLabel
             // 
-            this.textBox8.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Enabled = false;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBox8.Location = new System.Drawing.Point(209, 263);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.textBox8.Size = new System.Drawing.Size(193, 24);
-            this.textBox8.TabIndex = 24;
-            this.textBox8.Text = "Ár:";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.PriceLabel.BackColor = System.Drawing.SystemColors.Control;
+            this.PriceLabel.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.PriceLabel.Enabled = false;
+            this.PriceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.PriceLabel.Location = new System.Drawing.Point(361, 173);
+            this.PriceLabel.Name = "PriceLabel";
+            this.PriceLabel.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.PriceLabel.Size = new System.Drawing.Size(41, 24);
+            this.PriceLabel.TabIndex = 24;
+            this.PriceLabel.Text = "Ár:";
+            this.PriceLabel.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // ModifyPrices
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(800, 341);
+            this.Controls.Add(this.PriceField);
+            this.Controls.Add(this.PriceLabel);
+            this.Controls.Add(this.CancelBtn);
+            this.Controls.Add(this.ModifyPriceBtn);
+            this.Controls.Add(this.PartNameField);
+            this.Controls.Add(this.PartNameLabel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ModifyPrices";
@@ -210,18 +163,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button CancelBtn;
+        private System.Windows.Forms.Button ModifyPriceBtn;
+        private System.Windows.Forms.TextBox PartNameField;
+        private System.Windows.Forms.TextBox PartNameLabel;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox PriceField;
+        private System.Windows.Forms.TextBox PriceLabel;
     }
 }

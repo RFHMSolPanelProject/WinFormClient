@@ -9,6 +9,7 @@ DROP TABLE IF EXISTS Raktar;
 DROP TABLE IF EXISTS Megrendelo;
 DROP TABLE IF EXISTS Felhasznalok;
 DROP TABLE IF EXISTS Hianyzoalkatreszek;
+DROP TABLE IF EXISTS Arkalkulacio;
 
 
 CREATE TABLE Folyamatok
@@ -45,7 +46,8 @@ CREATE TABLE Alkatreszek
 	ANev		VARCHAR(255) 	PRIMARY KEY,
 	Maxdb		FLOAT 		NOT NULL,
 	Darab		FLOAT		NOT NULL,
-	Ar		FLOAT		NOT NULL
+	Ar			FLOAT		NOT NULL,
+	Statusz 	VARCHAR(50) 
 );
 
 CREATE TABLE Projekt
@@ -97,6 +99,15 @@ CREATE TABLE Hianyzoalkatreszek
 	hiany_ar 	INT 			NOT NULL,
 	hiany_statusz 	VARCHAR(255) 		NOT NULL,
 	FOREIGN KEY(hiany_nev) REFERENCES Alkatreszek(ANev)
+);
+
+CREATE TABLE Arkalkulacio(
+	ProjectID VARCHAR(50) NOT NULL,
+	Munkaora INT(255),
+	Munkadij INT(255),
+	
+	FOREIGN KEY(ProjectID) REFERENCES Projekt(ProjectKod),
+	PRIMARY KEY(ProjectID)
 );
 
 ALTER TABLE Hianyzoalkatreszek AUTO_INCREMENT = 1000;
