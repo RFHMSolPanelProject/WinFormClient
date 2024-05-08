@@ -38,22 +38,41 @@ namespace WindowsFormsApp1
                             string storedHashPWD = dr["Jelszo"].ToString();
                             string mastery = dr["Beosztas"].ToString();
 
-                            if (hashPWD.Equals(storedHashPWD))
+                            yes = hashPWD.Equals(storedHashPWD);
+                            if (yes)
                             {
-                                switch (mastery)
+                                // beosztás alapú felhatalmazási rendszer
+                                if (mastery.Equals("raktárvezető"))
                                 {
-                                    case "raktárvezető":
-                                        Form1 f1 = new Form1(); f1.Show(); break;
-                                    case "raktáros":
-                                        Form2 f2 = new Form2(); f2.Show(); break;
-                                    case "szakember":
-                                        Form3 f3 = new Form3(); f3.Show(); break;
-                                    case "admin":
-                                        Admin a = new Admin(); a.Show(); break;
-                                    default:
-                                        MessageBox.Show("A felhasználó nem található az adatbázisban!"); break;
+                                    Hide();
+                                    Form1 f1 = new Form1();
+                                    f1.Show();
+                                }
+                                if (mastery.Equals("raktáros"))
+                                {
+                                    Hide();
+                                    Form2 f2 = new Form2();
+                                    f2.Show();
+                                }
+                                if (mastery.Equals("szakember"))
+                                {
+                                    Hide();
+                                    Form3 f3 = new Form3();
+                                    f3.Show();
+                                }
+                                if (mastery.Equals("admin"))
+                                {
+                                    Hide();
+                                    Admin ad = new Admin();
+                                    ad.Show();
                                 }
                             }
+                            else 
+                            {
+                                MessageBox.Show("Hibás bejelentkezési adatok");
+                                yes = false;
+                            }
+
                         }
                     }
                 }
@@ -61,7 +80,7 @@ namespace WindowsFormsApp1
             catch (Exception e)
             {
                 MessageBox.Show($"Hiba a kapcsolat létesítésekor: {e}");
-                Environment.Exit(1);
+                yes = false;
             }
             return yes;
         }
@@ -80,6 +99,7 @@ namespace WindowsFormsApp1
         public Login()
         {
             InitializeComponent();
+            textBox2.PasswordChar = '*';
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -93,10 +113,9 @@ namespace WindowsFormsApp1
             string user = textBox1.Text;
             string pwd = textBox2.Text;
 
-            if (AuthUser(user, pwd))
-            {
+            if (AuthUser(user, pwd) == true)
+            { 
                 loginFail = 0;
-                Hide();
             }
             else
             {
@@ -110,19 +129,8 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
+        private void pictureBox2_Click(object sender, EventArgs e) => Environment.Exit(0);
 
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            textBox2.PasswordChar = '*';
-        }
-
-        private void pictureBox2_Click_1(object sender, EventArgs e)
-        {
-            Environment.Exit(0);
-        }
+        private void pictureBox2_Click_1(object sender, EventArgs e) => Environment.Exit(0);
     }
 }

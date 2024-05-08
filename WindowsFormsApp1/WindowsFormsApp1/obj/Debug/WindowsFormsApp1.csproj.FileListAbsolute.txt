@@ -255,3 +255,5 @@ Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.AddProject.resources
 Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ProjectList.resources
+Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Admin.resources
+Y:\GIT\WinFormClient\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.ProjectCompList.resources
