@@ -72,9 +72,9 @@ namespace WindowsFormsApp1
                                 MessageBox.Show("Hibás bejelentkezési adatok");
                                 yes = false;
                             }
-
                         }
                     }
+                    con.Close();
                 }
             }
             catch (Exception e)
@@ -106,7 +106,7 @@ namespace WindowsFormsApp1
         {
             if (DateTime.Now < lockoutEnd)
             {
-                MessageBox.Show($"Jelenleg ki van zárva! Kérem próbálja újra {lockoutEnd - DateTime.Now} múlva!");
+                MessageBox.Show($"Jelenleg ki van zárva! Kérem próbálja újra {lockoutEnd.Minute - DateTime.Now.Minute} múlva!");
                 return;
             }
 
@@ -122,8 +122,9 @@ namespace WindowsFormsApp1
                 loginFail++;
                 if (loginFail >= 3)
                 {
-                    lockoutEnd = DateTime.Now.AddMinutes(5);
-                    MessageBox.Show("Maximális bejelentkezési próbálkozások száma elérve! Ki van zárva 5 percre!");
+                    int min = 5;
+                    lockoutEnd = DateTime.Now.AddMinutes(min);
+                    MessageBox.Show($"Maximális bejelentkezési próbálkozások száma elérve! Ki van zárva {min} percre!");
                 }
                 else MessageBox.Show("Helytelen bejelentkezési adat(ok)!");
             }

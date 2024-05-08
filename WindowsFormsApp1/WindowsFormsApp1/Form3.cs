@@ -63,7 +63,8 @@ namespace WindowsFormsApp1
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            ProjectList pl = new ProjectList();
+            pl.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
