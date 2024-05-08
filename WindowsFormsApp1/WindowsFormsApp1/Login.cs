@@ -70,7 +70,6 @@ namespace WindowsFormsApp1
                             else 
                             {
                                 MessageBox.Show("Hibás bejelentkezési adatok");
-                                yes = false;
                             }
                         }
                     }

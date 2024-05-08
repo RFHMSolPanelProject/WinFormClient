@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\windowsformsapp1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|y:\\git\\winformclient\\windowsformsapp1\\windowsformsapp1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -35,7 +35,7 @@
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\admin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|y:\\git\\winformclient\\windowsformsapp1\\windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DA750AE1-6CCF-46AD-A910-B7D72B9D1C7E}|WindowsFormsApp1\\WindowsFormsApp1.csproj|solutionrelative:windowsformsapp1\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -146,12 +146,8 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -160,10 +156,14 @@
               "RelativeDocumentMoniker": "WindowsFormsApp1\\Login.cs",
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Login.cs",
               "RelativeToolTip": "WindowsFormsApp1\\Login.cs",
-              "ViewState": "AQIAAF0AAAAAAAAAAAAowEwAAAAgAAAA",
+              "ViewState": "AQIAAHEAAAAAAAAAAAAIwEcAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T22:25:45.495Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
@@ -174,8 +174,7 @@
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Form3.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Form3.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:39:11.735Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T13:39:11.735Z"
             },
             {
               "$type": "Document",
@@ -212,8 +211,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Login.Designer.cs",
               "ViewState": "AQIAALkAAAAAAAAAAAAiwNEAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T23:09:10.7Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T23:09:10.7Z"
             },
             {
               "$type": "Document",
@@ -223,7 +221,7 @@
               "RelativeDocumentMoniker": "WindowsFormsApp1\\ProjectList.cs",
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\ProjectList.cs",
               "RelativeToolTip": "WindowsFormsApp1\\ProjectList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFsAAAAAAAAA",
+              "ViewState": "AQIAAOAAAAAAAAAAAAAAwFsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-01T11:16:50.77Z",
               "EditorCaption": ""
@@ -238,8 +236,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Admin.Designer.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAA6wBQAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-07T23:06:03.956Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-07T23:06:03.956Z"
             },
             {
               "$type": "Document",
@@ -250,8 +247,7 @@
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Admin.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Admin.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T21:57:08.128Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-01T21:57:08.128Z"
             },
             {
               "$type": "Document",
@@ -263,8 +259,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Admin.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-01T22:03:38.188Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-01T22:03:38.188Z"
             },
             {
               "$type": "Document",
@@ -310,8 +305,7 @@
               "ToolTip": "Y:\\GIT\\WinFormClient\\WindowsFormsApp1\\WindowsFormsApp1\\Login.cs [Design]",
               "RelativeToolTip": "WindowsFormsApp1\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T13:45:15.557Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-04-30T13:45:15.557Z"
             },
             {
               "$type": "Document",
@@ -323,8 +317,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Form3.cs",
               "ViewState": "AQIAACsAAAAAAAAAAAAewEIAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T16:49:20.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T16:49:20.393Z"
             },
             {
               "$type": "Document",
@@ -417,8 +410,7 @@
               "RelativeToolTip": "WindowsFormsApp1\\Form3.Designer.cs",
               "ViewState": "AQIAAO8AAAAAAAAAAIAwwAIBAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T16:24:42.307Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T16:24:42.307Z"
             },
             {
               "$type": "Document",
