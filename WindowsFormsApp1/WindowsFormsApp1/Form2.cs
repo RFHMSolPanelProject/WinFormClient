@@ -12,7 +12,7 @@ namespace WindowsFormsApp1
     {
         private MySqlConnection conn;
         private const string conn_str =
-            @"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem";
+            @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
 
         public Form2()
         {

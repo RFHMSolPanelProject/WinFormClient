@@ -106,7 +106,7 @@ CREATE TABLE Arkalkulacio(
 	Munkaora INT(255),
 	Munkadij INT(255),
 	
-	FOREIGN KEY(ProjectID) REFERENCES Projekt(ProjectKod),
+	FOREIGN KEY(ProjectID) REFERENCES Projekt(ProjektKod),
 	PRIMARY KEY(ProjectID)
 );
 

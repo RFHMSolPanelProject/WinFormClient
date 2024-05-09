@@ -20,7 +20,7 @@ namespace WindowsFormsApp1
             bool yes = false;
 
             string hashPWD = HashPWD(pwd);
-            string conn = @"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem";
+            string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
             string query = "SELECT Jelszo, Beosztas FROM felhasznalok WHERE Felhasznalonev = @Felhasznalonev";
 
             try

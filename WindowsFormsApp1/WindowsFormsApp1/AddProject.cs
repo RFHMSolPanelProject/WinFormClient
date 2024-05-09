@@ -18,7 +18,7 @@ namespace WindowsFormsApp1
 
         private void CreateButton_Click(object sender, EventArgs e)
         {
-            string conn = @"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem";
+            string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
             string query = "INSERT INTO Projekt(ProjektKod, Helyszin, Leiras, Statusz) VALUES (@ProjektKod, @Helyszin, @Leiras, @Statusz)";
             string customerQuery = "INSERT INTO megrendelo(MegrendeloID, ProjektKod, MegrendeloNev, MegrendeloEmail) VALUES(@MegrendeloID, @ProjektKod, @MegrendeloNev, @MegrendeloEmail)";
             string priceCalcQuery = "INSERT INTO arkalkulacio(ProjectID,Munkaora,Munkadij) VALUES (@ProjectID,@Munkaora, @Munkadij)";

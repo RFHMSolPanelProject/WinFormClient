@@ -9,7 +9,7 @@ namespace WindowsFormsApp1
 {
     public partial class Displaytest : Form
     {
-        MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem");
+        MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
         MySqlCommand cmd;
         MySqlDataAdapter adapter;
         DataTable table;
