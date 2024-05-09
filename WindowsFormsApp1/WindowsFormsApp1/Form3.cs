@@ -28,7 +28,8 @@ namespace WindowsFormsApp1
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            PartToProject ptp = new PartToProject();
+            ptp.Show();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -69,7 +70,8 @@ namespace WindowsFormsApp1
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Displaytest dt = new Displaytest();
+            dt.Show();
         }
     }
 }

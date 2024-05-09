@@ -7,17 +7,10 @@ namespace WindowsFormsApp1
 {
     public partial class Form4 : Form
     {
-<<<<<<< Updated upstream
-        MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
-        MySqlCommand cmd;
-        MySqlDataAdapter adapter;
-        DataTable table;
-=======
         private readonly MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
         private MySqlCommand cmd;
         private MySqlDataAdapter adapter;
         private DataTable table;
->>>>>>> Stashed changes
 
         public Form4()
         {

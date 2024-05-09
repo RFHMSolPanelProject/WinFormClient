@@ -1,22 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 
 namespace WindowsFormsApp1
 {
     public partial class PartToProject : Form
     {
-        MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
-        MySqlCommand command;
-        MySqlDataAdapter adapter;
+        private readonly MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
+        private MySqlCommand command;
 
         public PartToProject()
         {
@@ -26,7 +17,7 @@ namespace WindowsFormsApp1
         private void PartToProject_Load(object sender, EventArgs e)
         {
             // Itt helyezheted el az adatbázis kapcsolatot és az adatok lekérdezését
-           
+
             con.Open();
             command = new MySqlCommand("SELECT ANev FROM alkatreszek", con);
             using (MySqlDataReader reader = command.ExecuteReader())
@@ -46,21 +37,20 @@ namespace WindowsFormsApp1
             }
             con.Close();
         }
-        
+
 
         private void AddBtn_Click(object sender, EventArgs e)
-        {         
+        {
             // Van e választott alkatrész a PartCombobox-ból
             if (PartComboBox.SelectedItem != null && !string.IsNullOrWhiteSpace(StockField.Text))
             {
                 // Kiválasztott alkatrész neve
                 string selectedPart = PartComboBox.SelectedItem.ToString();
                 string projectIDInput = ProjectIDField.Text;
-                
+
 
                 // Megadott darabszám
-                int quantity;
-                if (!int.TryParse(StockField.Text, out quantity))
+                if (!int.TryParse(StockField.Text, out int quantity))
                 {
                     MessageBox.Show("Kérlek adj meg egy érvényes darabszámot!");
                     return;
@@ -69,30 +59,30 @@ namespace WindowsFormsApp1
                 // Van-e elegendő raktárkészlet
                 int currentStock;
                 con.Open();
-                    command = new MySqlCommand("SELECT Darab FROM alkatreszek WHERE ANev = @ANev", con);
-                    command.Parameters.AddWithValue("@ANev", selectedPart);
-                    currentStock = Convert.ToInt32(command.ExecuteScalar());
-                con.Close() ;
+                command = new MySqlCommand("SELECT Darab FROM alkatreszek WHERE ANev = @ANev", con);
+                command.Parameters.AddWithValue("@ANev", selectedPart);
+                currentStock = Convert.ToInt32(command.ExecuteScalar());
+                con.Close();
                 // Ha van elegendő raktárkészlet, frissítjük a projektraktárban az alkatrész mennyiségét
                 if (currentStock >= quantity)
                 {
 
-                    con.Open();                      
-                        command = new MySqlCommand("INSERT INTO projektraktar(ProjektKod, ANev, SzDarab) VALUES(@ProjectID, @ANev, @SZDarab)", con);                       
-                        command.Parameters.AddWithValue("@ProjectID", projectIDInput);
-                        command.Parameters.AddWithValue("@ANev", selectedPart);
-                        command.Parameters.AddWithValue("@SZDarab", quantity);        
-                        command.ExecuteNonQuery();       
+                    con.Open();
+                    command = new MySqlCommand("INSERT INTO projektraktar(ProjektKod, ANev, SzDarab) VALUES(@ProjectID, @ANev, @SZDarab)", con);
+                    command.Parameters.AddWithValue("@ProjectID", projectIDInput);
+                    command.Parameters.AddWithValue("@ANev", selectedPart);
+                    command.Parameters.AddWithValue("@SZDarab", quantity);
+                    command.ExecuteNonQuery();
                     con.Close();
                     //Javítási lehetőség feltétellel megnézi van-e már ilyen alkatrész adott projekt kódon a COUNT-tal és ott lehet neki if-et adni INSERT-re vagy UPDATE-re hogy ne akadjon ki ha esetleg ismételt hozzáadás történik a projektraktárhoz ugyanabból az alkatrészből
-                 
-                    
+
+
                     // Levonjuk az alkatrész kiválasztott mennyiségét az adatbázisból
-                    con.Open();                  
-                        command = new MySqlCommand("UPDATE alkatreszek SET Darab = Darab - @quantity WHERE ANev = @ANev", con);            
-                        command.Parameters.AddWithValue("@quantity", quantity);
-                        command.Parameters.AddWithValue("@ANev", selectedPart);
-                        command.ExecuteNonQuery();                                            
+                    con.Open();
+                    command = new MySqlCommand("UPDATE alkatreszek SET Darab = Darab - @quantity WHERE ANev = @ANev", con);
+                    command.Parameters.AddWithValue("@quantity", quantity);
+                    command.Parameters.AddWithValue("@ANev", selectedPart);
+                    command.ExecuteNonQuery();
                     con.Close();
 
                     con.Open();
@@ -113,7 +103,7 @@ namespace WindowsFormsApp1
                     // Ha nincs elegendő raktárkészlet, küldünk egy üzenetet az InfoLog TextBox-ba
                     InfoLogTextbox.AppendText($"Nincs elegendő készlet: {currentStock} darab van a raktárban.");
                 }
-                
+
             }
             else
             {

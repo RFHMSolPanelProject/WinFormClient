@@ -9,21 +9,20 @@ namespace WindowsFormsApp1
 {
     public partial class ProjectList : Form
     {
-<<<<<<< Updated upstream
-        MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
-        MySqlCommand cmd;
-        MySqlDataAdapter adapter;
-        DataTable table;
-=======
->>>>>>> Stashed changes
-        string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
-        string query = "SELECT * FROM Projekt";
-        string seged;
+        private readonly string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
+        private readonly string query = "SELECT * FROM Projekt";
+        private string seged;
+
+        private readonly MySqlConnection con;
+        private MySqlCommand cmd;
+        private MySqlDataAdapter adapter;
+        private DataTable table;
 
         public ProjectList()
         {
             InitializeComponent();
         }
+
         private void LoadData()
         {
             projectListGrid.AutoGenerateColumns = false;
@@ -69,7 +68,7 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void button1_Click(object sender, System.EventArgs e) => projectListGrid.DataSource = GetProjects();
+        private void button1_Click(object sender, EventArgs e) => projectListGrid.DataSource = GetProjects();
 
         private DataTable GetProjects()
         {
@@ -142,31 +141,39 @@ namespace WindowsFormsApp1
         private void CompletedProject(DataGridView dataGridView)
         {
 
-            Form customMessageBox = new Form();
-            customMessageBox.Text = "Confirmation";
-            customMessageBox.Size = new System.Drawing.Size(300, 150);
-            customMessageBox.FormBorderStyle = FormBorderStyle.FixedDialog;
-            customMessageBox.StartPosition = FormStartPosition.CenterParent;
+            Form customMessageBox = new Form
+            {
+                Text = "Confirmation",
+                Size = new System.Drawing.Size(300, 150),
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                StartPosition = FormStartPosition.CenterParent
+            };
 
             // Add message label
-            Label messageLabel = new Label();
-            messageLabel.Text = "Biztos sikeresre állítod ezt a projektet?";
-            messageLabel.AutoSize = true;
-            messageLabel.Location = new System.Drawing.Point(30, 20);
+            Label messageLabel = new Label
+            {
+                Text = "Biztos sikeresre állítod ezt a projektet?",
+                AutoSize = true,
+                Location = new System.Drawing.Point(30, 20)
+            };
             customMessageBox.Controls.Add(messageLabel);
 
             // Add Yes button
-            Button yesButton = new Button();
-            yesButton.Text = "Igen";
-            yesButton.DialogResult = DialogResult.Yes;
-            yesButton.Location = new System.Drawing.Point(50, 80);
+            Button yesButton = new Button
+            {
+                Text = "Igen",
+                DialogResult = DialogResult.Yes,
+                Location = new System.Drawing.Point(50, 80)
+            };
             customMessageBox.Controls.Add(yesButton);
 
             // Add No button
-            Button noButton = new Button();
-            noButton.Text = "Nem";
-            noButton.DialogResult = DialogResult.No;
-            noButton.Location = new System.Drawing.Point(150, 80);
+            Button noButton = new Button
+            {
+                Text = "Nem",
+                DialogResult = DialogResult.No,
+                Location = new System.Drawing.Point(150, 80)
+            };
             customMessageBox.Controls.Add(noButton);
 
             // Set the form's AcceptButton and CancelButton properties
@@ -227,31 +234,39 @@ namespace WindowsFormsApp1
         private void FailedProject(DataGridView dataGridView)
         {
 
-            Form customMessageBox = new Form();
-            customMessageBox.Text = "Confirmation";
-            customMessageBox.Size = new System.Drawing.Size(300, 150);
-            customMessageBox.FormBorderStyle = FormBorderStyle.FixedDialog;
-            customMessageBox.StartPosition = FormStartPosition.CenterParent;
+            Form customMessageBox = new Form
+            {
+                Text = "Confirmation",
+                Size = new System.Drawing.Size(300, 150),
+                FormBorderStyle = FormBorderStyle.FixedDialog,
+                StartPosition = FormStartPosition.CenterParent
+            };
 
             // Add message label
-            Label messageLabel = new Label();
-            messageLabel.Text = "Biztos sikertelenre állítod ezt a projektet?";
-            messageLabel.AutoSize = true;
-            messageLabel.Location = new System.Drawing.Point(30, 20);
+            Label messageLabel = new Label
+            {
+                Text = "Biztos sikertelenre állítod ezt a projektet?",
+                AutoSize = true,
+                Location = new System.Drawing.Point(30, 20)
+            };
             customMessageBox.Controls.Add(messageLabel);
 
             // Add Yes button
-            Button yesButton = new Button();
-            yesButton.Text = "Igen";
-            yesButton.DialogResult = DialogResult.Yes;
-            yesButton.Location = new System.Drawing.Point(50, 80);
+            Button yesButton = new Button
+            {
+                Text = "Igen",
+                DialogResult = DialogResult.Yes,
+                Location = new System.Drawing.Point(50, 80)
+            };
             customMessageBox.Controls.Add(yesButton);
 
             // Add No button
-            Button noButton = new Button();
-            noButton.Text = "Nem";
-            noButton.DialogResult = DialogResult.No;
-            noButton.Location = new System.Drawing.Point(150, 80);
+            Button noButton = new Button
+            {
+                Text = "Nem",
+                DialogResult = DialogResult.No,
+                Location = new System.Drawing.Point(150, 80)
+            };
             customMessageBox.Controls.Add(noButton);
 
             // Set the form's AcceptButton and CancelButton properties

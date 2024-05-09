@@ -59,8 +59,8 @@ namespace WindowsFormsApp1
 
             List<Optimizer.Cell> sPath = opt.FindShortestPath(start, end);
 
-            foreach(var cell in sPath) InsertIntoDB(cell.Row, cell.Column, cell.Level);
-            
+            foreach (var cell in sPath) InsertIntoDB(cell.Row, cell.Column, cell.Level);
+
         }
 
         private void InsertIntoDB(int r, int c, int l)
@@ -73,7 +73,8 @@ namespace WindowsFormsApp1
                 cmd.Parameters.AddWithValue("@Oszlop", c);
                 cmd.Parameters.AddWithValue("@Polc", l);
                 cmd.ExecuteNonQuery();
-            } catch(Exception e)
+            }
+            catch (Exception e)
             {
                 MessageBox.Show($"Hiba a táblába való beszúrás során: {e}");
             }
