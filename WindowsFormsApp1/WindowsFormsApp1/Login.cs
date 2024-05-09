@@ -44,9 +44,22 @@ namespace WindowsFormsApp1
                                 // beosztás alapú felhatalmazási rendszer
                                 if (mastery.Equals("raktárvezető"))
                                 {
+<<<<<<< Updated upstream
                                     Hide();
                                     Form1 f1 = new Form1();
                                     f1.Show();
+=======
+                                    case "raktárvezető":
+                                        Hide(); Form1 f1 = new Form1(); f1.Show(); break;
+                                    case "raktáros":
+                                        Hide(); Form2 f2 = new Form2(); f2.Show(); break;
+                                    case "szakember":
+                                        Hide(); Form3 f3 = new Form3(); f3.Show(); break;
+                                    case "admin":
+                                        Hide(); Admin ad = new Admin(); ad.Show(); break;
+                                    default:
+                                        MessageBox.Show("A felhasználó nem található az adatbázisban!"); break;
+>>>>>>> Stashed changes
                                 }
                                 if (mastery.Equals("raktáros"))
                                 {
@@ -98,7 +111,11 @@ namespace WindowsFormsApp1
         public Login()
         {
             InitializeComponent();
+<<<<<<< Updated upstream
             textBox2.PasswordChar = '*';
+=======
+            PasswordField.PasswordChar = '*';
+>>>>>>> Stashed changes
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -112,10 +129,15 @@ namespace WindowsFormsApp1
             string user = textBox1.Text;
             string pwd = textBox2.Text;
 
+<<<<<<< Updated upstream
             if (AuthUser(user, pwd) == true)
             { 
                 loginFail = 0;
             }
+=======
+            if (AuthUser(user, pwd)) loginFail = 0;
+            
+>>>>>>> Stashed changes
             else
             {
                 loginFail++;
@@ -131,6 +153,28 @@ namespace WindowsFormsApp1
 
         private void pictureBox2_Click(object sender, EventArgs e) => Environment.Exit(0);
 
+<<<<<<< Updated upstream
         private void pictureBox2_Click_1(object sender, EventArgs e) => Environment.Exit(0);
+=======
+        private void CloseBtnPic_Click_1(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void UserField_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UserField_MouseClick(object sender, MouseEventArgs e)
+        {
+            UserField.Text = "";
+        }
+
+        private void PasswordField_MouseClick(object sender, MouseEventArgs e)
+        {
+            PasswordField.Text = "";
+        }
+>>>>>>> Stashed changes
     }
 }

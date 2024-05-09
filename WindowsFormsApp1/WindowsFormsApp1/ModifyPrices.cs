@@ -6,12 +6,17 @@ namespace WindowsFormsApp1
 {
     public partial class ModifyPrices : Form
     {
-        readonly MySqlConnection con;
-        readonly MySqlCommand cmd;
+        private readonly MySqlConnection con;
+        private readonly MySqlCommand cmd;
         public ModifyPrices()
         {
             con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
+<<<<<<< Updated upstream
             cmd = new MySqlCommand("INSERT INTO Alkatreszek(ANev, Maxdb, Darab, Ar) VALUES (@ANev, @Maxdb, @Darab, @Ar)", con);
+=======
+            //cmd = new MySqlCommand("INSERT INTO Alkatreszek(ANev, Maxdb, Darab, Ar) VALUES (@ANev, @Maxdb, @Darab, @Ar)", con);
+            cmd = new MySqlCommand("UPDATE Alkatreszek SET Ar = @Ar WHERE ANev = @ANev", con);
+>>>>>>> Stashed changes
             InitializeComponent();
         }
         private void button1_Click(object sender, EventArgs e)      // Hozzáad
