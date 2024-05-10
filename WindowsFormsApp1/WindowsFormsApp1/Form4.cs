@@ -57,7 +57,7 @@ namespace WindowsFormsApp1
             try
             {
                 con.Open();
-                cmd = new MySqlCommand("SELECT * FROM Munkavegzes", con);
+                cmd = new MySqlCommand("SELECT * FROM Arkalkulacio", con);
                 adapter = new MySqlDataAdapter(cmd);
                 table = new DataTable();
                 adapter.Fill(table);
@@ -93,7 +93,7 @@ namespace WindowsFormsApp1
 
         private void RunQuery()
         {
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO Munkavegzes(ProjektNev,Munkavegzes,Munkadij) VALUES (@ProjektNev,@Munkavegzes, @Munkadij)", con);
+            MySqlCommand cmd = new MySqlCommand("INSERT INTO Arkalkulacio(ProjectID,Munkaora,Munkadij) VALUES (@ProjektNev,@Munkavegzes, @Munkadij)", con);
 
             cmd.Parameters.AddWithValue("@ProjektNev", textBox2.Text);
             cmd.Parameters.AddWithValue("@Munkavegzes", textBox3.Text);

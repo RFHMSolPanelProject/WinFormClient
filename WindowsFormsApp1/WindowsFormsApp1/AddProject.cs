@@ -27,12 +27,22 @@ namespace WindowsFormsApp1
                     cmd.Parameters.AddWithValue("@Statusz", "InProgress");
 
                     con.Open();
-                    int i = cmd.ExecuteNonQuery();
-                    if (i != 0) 
+                    try
                     {
-                        DialogResult = DialogResult.OK;
+                        int i = cmd.ExecuteNonQuery();
+                        if (i != 0)
+                        {
+                            DialogResult = DialogResult.OK;
+                        }
                     }
-                    con.Close();
+                    catch
+                    {
+                        MessageBox.Show($"{textBox6.Text} néven már létre van hozva egy projekt!");
+                    }
+                    finally
+                    {
+                        con.Close();
+                    }
                 }
             }
         }

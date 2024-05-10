@@ -7,9 +7,8 @@ namespace WindowsFormsApp1
 {
     public partial class Form2 : Form
     {
-        private MySqlConnection conn;
-        private const string conn_str =
-            @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
+        private MySqlConnection con;
+        private const string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
 
         public Form2()
         {
@@ -21,12 +20,29 @@ namespace WindowsFormsApp1
         {
             try
             {
-                conn = new MySqlConnection(conn_str);
-                conn.Open();
+                con = new MySqlConnection(conn);
+                con.Open();
             }
             catch (Exception e)
             {
-                MessageBox.Show($"Sikertelen csatlakozás az adatbázishoz: {e}");
+                MessageBox.Show($"Sikertelen csatlakozás az adatbázishoz: {e}!");
+            }
+        }
+
+        private void InsertIntoDB(int r, int c, int l)
+        {
+            try
+            {
+                string query = "INSERT INTO Raktar(Sor, Oszlop, Polc) VALUES (@Sor, @Oszlop, @Polc)";
+                var cmd = new MySqlCommand(query, con);
+                cmd.Parameters.AddWithValue("@Sor", r);
+                cmd.Parameters.AddWithValue("@Oszlop", c);
+                cmd.Parameters.AddWithValue("@Polc", l);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show($"Hiba a táblába való beszúrás során: {e}");
             }
         }
 
@@ -54,29 +70,14 @@ namespace WindowsFormsApp1
             Optimizer opt = new Optimizer();
             opt.InitAdjMat();
 
-            Optimizer.Cell start = new Optimizer.Cell(0, 0, 0),
-                end = new Optimizer.Cell(9, 3, 5);
+            Optimizer.Cell start = new Optimizer.Cell(0, 0, 0);
+            Optimizer.Cell end = new Optimizer.Cell(9, 3, 5);
 
             List<Optimizer.Cell> sPath = opt.FindShortestPath(start, end);
 
-            foreach (var cell in sPath) InsertIntoDB(cell.Row, cell.Column, cell.Level);
-
-        }
-
-        private void InsertIntoDB(int r, int c, int l)
-        {
-            try
+            foreach (var cell in sPath)
             {
-                string query = "INSERT INTO Raktar(Sor, Oszlop, Polc) VALUES (@Sor, @Oszlop, @Polc)";
-                var cmd = new MySqlCommand(query, conn);
-                cmd.Parameters.AddWithValue("@Sor", r);
-                cmd.Parameters.AddWithValue("@Oszlop", c);
-                cmd.Parameters.AddWithValue("@Polc", l);
-                cmd.ExecuteNonQuery();
-            }
-            catch (Exception e)
-            {
-                MessageBox.Show($"Hiba a táblába való beszúrás során: {e}");
+                InsertIntoDB(cell.Row, cell.Column, cell.Level);
             }
         }
     }

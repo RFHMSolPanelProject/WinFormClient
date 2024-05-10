@@ -7,7 +7,7 @@ namespace WindowsFormsApp1
     public partial class IncomingPart : Form
     {
 
-        private readonly MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=orion;database=napelem");
+        private readonly MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
         private MySqlCommand command;
 
         public IncomingPart()

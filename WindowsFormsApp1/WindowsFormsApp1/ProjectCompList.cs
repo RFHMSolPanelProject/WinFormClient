@@ -9,7 +9,7 @@ namespace WindowsFormsApp1
     {
         private readonly string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
         private readonly string query = "SELECT * FROM projektraktar";
-        
+
         public ProjectCompList()
         {
             InitializeComponent();
@@ -19,17 +19,12 @@ namespace WindowsFormsApp1
 
         private DataTable GetProjCompList()
         {
+            var con = new MySqlConnection(conn);
+            con.Open();
+            var cmd = new MySqlCommand(query, con);
+            var dr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
-            using(var con = new MySqlConnection(conn))
-            {
-                using(var cmd = new MySqlCommand(query, con))
-                {
-                    con.Open();
-                    var dr = cmd.ExecuteReader();
-                    dt.Load(dr);
-                }
-            }
-
+            dt.Load(dr);
             return dt;
         }
     }

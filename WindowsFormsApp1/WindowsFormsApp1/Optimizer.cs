@@ -22,7 +22,7 @@ namespace WindowsFormsApp1
         private const int Columns = 4;
         private const int Levels = 6;
 
-        private int[,,] adjMat = new int[Rows, Columns, Levels];
+        private int[,,] AdjMat = new int[Rows, Columns, Levels];
 
         public void InitAdjMat()
         {
@@ -32,7 +32,7 @@ namespace WindowsFormsApp1
                 {
                     for (int k = 0; k < Levels; k++)
                     {
-                        adjMat[i, j, k] = 1;
+                        AdjMat[i, j, k] = 1;
                     }
                 }
             }
@@ -40,64 +40,81 @@ namespace WindowsFormsApp1
 
         public List<Cell> FindShortestPath(Cell start, Cell end)
         {
-            int[,,] d = new int[Rows, Columns, Levels];
+            // Initialize distances
+            int[,,] distance = new int[Rows, Columns, Levels];
             for (int i = 0; i < Rows; i++)
             {
                 for (int j = 0; j < Columns; j++)
                 {
                     for (int k = 0; k < Levels; k++)
                     {
-                        d[i, j, k] = int.MaxValue;
+                        distance[i, j, k] = int.MaxValue;
                     }
                 }
             }
 
-            d[start.Row, start.Column, start.Level] = 0;
+            distance[start.Row, start.Column, start.Level] = 0;
 
+            // Initialize visited cells
             bool[,,] visited = new bool[Rows, Columns, Levels];
 
+            // Dijkstra algorithm
+            bool pathFound = false;
             while (true)
             {
-                int minD = int.MaxValue;
-                Cell closest = null;
+                // Find the closest unvisited cell
+                int minDistance = int.MaxValue;
+                Cell closestCell = null;
                 for (int i = 0; i < Rows; i++)
                 {
                     for (int j = 0; j < Columns; j++)
                     {
                         for (int k = 0; k < Levels; k++)
                         {
-                            if (!visited[i, j, k] && d[i, j, k] < minD)
+                            if (!visited[i, j, k] && distance[i, j, k] < minDistance)
                             {
-                                minD = d[i, j, k];
-                                closest = new Cell(i, j, k);
+                                minDistance = distance[i, j, k];
+                                closestCell = new Cell(i, j, k);
                             }
                         }
                     }
                 }
 
-                if (closest == null) break;
+                if (closestCell == null || minDistance == int.MaxValue)
+                {
+                    // No more reachable cells or destination unreachable
+                    break;
+                }
 
-                visited[closest.Row, closest.Column, closest.Level] = true;
+                visited[closestCell.Row, closestCell.Column, closestCell.Level] = true;
 
+                // Check if we reached the destination
+                if (closestCell.Equals(end))
+                {
+                    pathFound = true;
+                    break;
+                }
+
+                // Update distances of neighboring cells
                 for (int i = -1; i <= 1; i++)
                 {
                     for (int j = -1; j <= 1; j++)
                     {
                         for (int k = -1; k <= 1; k++)
                         {
-                            int newRow = closest.Row + i;
-                            int newColumn = closest.Column + j;
-                            int newLevel = closest.Level + k;
+                            int newRow = closestCell.Row + i;
+                            int newColumn = closestCell.Column + j;
+                            int newLevel = closestCell.Level + k;
 
                             if (newRow >= 0 && newRow < Rows &&
                                 newColumn >= 0 && newColumn < Columns &&
                                 newLevel >= 0 && newLevel < Levels)
                             {
-                                int newD = d[closest.Row, closest.Column, closest.Level] +
-                                    adjMat[newRow, newColumn, newLevel];
-                                if (newD < d[newRow, newColumn, newLevel])
+                                int newDistance = distance[closestCell.Row, closestCell.Column, closestCell.Level] +
+                                                  AdjMat[newRow, newColumn, newLevel];
+                                if (newDistance < distance[newRow, newColumn, newLevel])
                                 {
-                                    d[newRow, newColumn, newLevel] = newD;
+                                    distance[newRow, newColumn, newLevel] = newDistance;
                                 }
                             }
                         }
@@ -105,39 +122,50 @@ namespace WindowsFormsApp1
                 }
             }
 
-            List<Cell> sPath = new List<Cell>();
-            Cell curr = end;
-            while (curr != null)
+            if (!pathFound)
             {
-                sPath.Add(curr);
-                int minD = int.MaxValue;
-                Cell next = null;
-                for (int i = -1; i <= 1; i++)
-                {
-                    for (int j = -1; j <= 1; j++)
-                    {
-                        for (int k = -1; k <= 1; k++)
-                        {
-                            int newRow = curr.Row + i;
-                            int newColumn = curr.Column + j;
-                            int newLevel = curr.Level + k;
+                // No path found, do something (e.g., return an empty list)
+                return new List<Cell>();
+            }
 
-                            if (newRow >= 0 && newRow < Rows &&
-                                newColumn >= 0 && newColumn < Columns &&
-                                newLevel >= 0 && newLevel < Levels &&
-                                d[newRow, newColumn, newLevel] < minD)
+            // Reconstruct the shortest path
+            List<Cell> shortestPath = new List<Cell>();
+            if (visited[end.Row, end.Column, end.Level])
+            {
+                Cell currentCell = end;
+                while (!currentCell.Equals(start))
+                {
+                    shortestPath.Add(currentCell);
+                    int minDistance = int.MaxValue;
+                    Cell nextCell = null;
+                    for (int i = -1; i <= 1; i++)
+                    {
+                        for (int j = -1; j <= 1; j++)
+                        {
+                            for (int k = -1; k <= 1; k++)
                             {
-                                minD = d[newRow, newColumn, newLevel];
-                                next = new Cell(newRow, newColumn, newLevel);
+                                int newRow = currentCell.Row + i;
+                                int newColumn = currentCell.Column + j;
+                                int newLevel = currentCell.Level + k;
+
+                                if (newRow >= 0 && newRow < Rows &&
+                                    newColumn >= 0 && newColumn < Columns &&
+                                    newLevel >= 0 && newLevel < Levels &&
+                                    distance[newRow, newColumn, newLevel] < minDistance)
+                                {
+                                    minDistance = distance[newRow, newColumn, newLevel];
+                                    nextCell = new Cell(newRow, newColumn, newLevel);
+                                }
                             }
                         }
                     }
+                    currentCell = nextCell;
                 }
-                curr = next;
+                shortestPath.Add(start); // Add the start cell to the path
+                shortestPath.Reverse(); // Reverse the path to get the correct order
             }
 
-            sPath.Reverse();
-            return sPath;
+            return shortestPath;
         }
     }
 }

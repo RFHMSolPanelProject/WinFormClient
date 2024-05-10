@@ -26,13 +26,14 @@ namespace WindowsFormsApp1
                     {
                         cmd.Parameters.AddWithValue("@Felhasznalonev", textBox5.Text);
                         cmd.Parameters.AddWithValue("@Jelszo", HashPWD(textBox2.Text));
-                        cmd.Parameters.AddWithValue("@Beosztas", comboBox1.SelectedIndex.ToString());
+                        cmd.Parameters.AddWithValue("@Beosztas", comboBox1.SelectedItem.ToString());
 
                         con.Open();
                         cmd.ExecuteNonQuery();
                         con.Close();
                     }
                 }
+                MessageBox.Show($"{textBox5.Text} nevű felhasználó sikeresen regisztrálva {comboBox1.SelectedItem}ként!");
             }
             catch (Exception ex)
             {
@@ -73,7 +74,7 @@ namespace WindowsFormsApp1
 
         private void Check()
         {
-            bool isHidden = textBox5.Text.Trim() != "" && textBox2.Text.Trim() != "" && comboBox1.SelectedItem != null;
+            bool isHidden = textBox5.Text.Trim() != "" && textBox2.Text.Trim() != "" && (string)comboBox1.SelectedItem != "";
             button2.Visible = isHidden;
         }
     }

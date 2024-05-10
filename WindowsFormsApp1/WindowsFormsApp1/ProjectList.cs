@@ -13,7 +13,7 @@ namespace WindowsFormsApp1
         private readonly string query = "SELECT * FROM Projekt";
         private string seged;
 
-        private readonly MySqlConnection con;
+        private MySqlConnection con;
         private MySqlCommand cmd;
         private MySqlDataAdapter adapter;
         private DataTable table;
@@ -40,17 +40,8 @@ namespace WindowsFormsApp1
             projectListGrid.Columns[3].DataPropertyName = "Statusz";
             try
             {
-                if (con.State == ConnectionState.Open)
-                {
-                    // Az adatbázis kapcsolat nyitva van
-                    // Ide írd a teendőket, amelyeket a kapcsolat nyitva lévő állapotban szeretnél végrehajtani
-                }
-                else
-                {
-                    con.Open();
-                    // Az adatbázis kapcsolat zárva van
-                    // Ide írd a teendőket, amelyeket a kapcsolat zárva lévő állapotban szeretnél végrehajtani
-                }
+                con = new MySqlConnection(conn);
+                con.Open();
                 cmd = new MySqlCommand("SELECT * FROM Projekt", con);
                 adapter = new MySqlDataAdapter(cmd);
                 table = new DataTable();

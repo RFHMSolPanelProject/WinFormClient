@@ -93,25 +93,13 @@ namespace WindowsFormsApp1
             }
         }
 
-        // Form-hoz kapcsolódó dolgok
-
-        public Login()
-        {
-            InitializeComponent();
-            textBox2.PasswordChar = '*';
-        }
-
-        private void button1_Click(object sender, EventArgs e)
+        private void InitiateLogin(string user, string pwd)
         {
             if (DateTime.Now < lockoutEnd)
             {
                 MessageBox.Show($"Jelenleg ki van zárva! Kérem próbálja újra {lockoutEnd.Minute - DateTime.Now.Minute} múlva!");
                 return;
             }
-
-            string user = textBox1.Text;
-            string pwd = textBox2.Text;
-
 
             if (AuthUser(user, pwd)) loginFail = 0;
             else
@@ -127,8 +115,16 @@ namespace WindowsFormsApp1
             }
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e) => Environment.Exit(0);
+        // Form-hoz kapcsolódó dolgok
+        public Login()
+        {
+            InitializeComponent();
+            textBox2.PasswordChar = '*';
+        }
 
-        private void pictureBox2_Click_1(object sender, EventArgs e) => Environment.Exit(0);
+
+        private void LoginButtonClick(object sender, EventArgs e) => InitiateLogin(textBox1.Text, textBox2.Text);
+
+        private void ExitButtonClick(object sender, EventArgs e) => Environment.Exit(0);
     }
 }

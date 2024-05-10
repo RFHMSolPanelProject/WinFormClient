@@ -80,7 +80,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Bejelentkezés";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.LoginButtonClick);
             // 
             // panel2
             // 
@@ -103,7 +103,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 10;
             this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
+            this.pictureBox2.Click += new System.EventHandler(this.ExitButtonClick);
             // 
             // label2
             // 

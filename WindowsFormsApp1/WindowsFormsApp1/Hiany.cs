@@ -7,55 +7,79 @@ namespace WindowsFormsApp1
 {
     public partial class Hiany : Form
     {
+        
+
         public Hiany()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e) => miss_occ_datagrid.DataSource = GetMissingList();
+        private void button1_Click(object sender, EventArgs e) => GetMissingList();
 
         // B.3
-        private DataTable GetMissingList()
+        private void GetMissingList()
         {
-            DataTable dtMissing = new DataTable();
-
             string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
-            string query = "Select * from hianyzoalkatreszek where hiany_statusz like 'hiányzik'";
-
-            using (var con = new MySqlConnection(conn))
+            var con = new MySqlConnection(conn);
+            try
             {
-                using (var cmd = new MySqlCommand(query, con))
-                {
-                    con.Open();
-                    var dr = cmd.ExecuteReader();
-                    dtMissing.Load(dr);
-                }
-            }
+                con.Open();
+                string query = "Select hiany_nev as 'Terméknév', hiany_db as 'Darabszám', hiany_ar as 'Ár', hiany_statusz as 'Státusz' from hianyzoalkatreszek where hiany_statusz like 'hiányzik'";            
+                var cmd = new MySqlCommand(query, con);
+                var apt = new MySqlDataAdapter(cmd);
+                DataTable dtMissing = new DataTable();
 
-            return dtMissing;
+                apt.Fill(dtMissing);
+
+                miss_occ_datagrid.DataSource = dtMissing;
+
+                miss_occ_datagrid.Columns["Terméknév"].HeaderText = "Terméknév";
+                miss_occ_datagrid.Columns["Darabszám"].HeaderText = "Darabszám";
+                miss_occ_datagrid.Columns["Ár"].HeaderText = "Ár";
+                miss_occ_datagrid.Columns["Státusz"].HeaderText = "Státusz";
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show($"Hiba történt az adatok lekérdezése során: {ex}!");
+            }
+            finally
+            {
+                con.Close();
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e) => miss_occ_datagrid.DataSource = GetOccupiedList();
+        private void button2_Click(object sender, EventArgs e) => GetOccupiedList();
 
         // B.4
-        private DataTable GetOccupiedList()
+        private void GetOccupiedList()
         {
-            DataTable dtOcc = new DataTable();
-
             string conn = @"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem";
-            string query = "Select * from hianyzoalkatreszek where hiany_statusz like 'lefoglalva';";
-
-            using (var con = new MySqlConnection(conn))
+            var con = new MySqlConnection(conn);
+            try
             {
-                using (var cmd = new MySqlCommand(query, con))
-                {
-                    con.Open();
-                    var dr = cmd.ExecuteReader();
-                    dtOcc.Load(dr);
-                }
-            }
+                con.Open();
+                string query = "Select hiany_nev as 'Terméknév', hiany_db as 'Darabszám', hiany_ar as 'Ár', hiany_statusz as 'Státusz' from hianyzoalkatreszek where hiany_statusz like 'lefoglalva'";
+                var cmd = new MySqlCommand(query, con);
+                var apt = new MySqlDataAdapter(cmd);
+                DataTable dtMissing = new DataTable();
 
-            return dtOcc;
+                apt.Fill(dtMissing);
+
+                miss_occ_datagrid.DataSource = dtMissing;
+
+                miss_occ_datagrid.Columns["Terméknév"].HeaderText = "Terméknév";
+                miss_occ_datagrid.Columns["Darabszám"].HeaderText = "Darabszám";
+                miss_occ_datagrid.Columns["Ár"].HeaderText = "Ár";
+                miss_occ_datagrid.Columns["Státusz"].HeaderText = "Státusz";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Hiba történt az adatok lekérdezése során: {ex}!");
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }
