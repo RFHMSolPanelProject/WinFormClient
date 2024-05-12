@@ -2,8 +2,10 @@
 
 namespace WindowsFormsApp1
 {
+    // az optimalizálásért felelős osztály
     public class Optimizer
     {
+        // beágyazott osztály a cellák számára
         public class Cell
         {
             public int Row { get; set; }
@@ -22,7 +24,7 @@ namespace WindowsFormsApp1
         private const int Columns = 4;
         private const int Levels = 6;
 
-        private int[,,] AdjMat = new int[Rows, Columns, Levels];
+        private readonly int[,,] AdjMat = new int[Rows, Columns, Levels];
 
         public void InitAdjMat()
         {
@@ -40,7 +42,7 @@ namespace WindowsFormsApp1
 
         public List<Cell> FindShortestPath(Cell start, Cell end)
         {
-            // Initialize distances
+            // Távolságok inicializálása
             int[,,] distance = new int[Rows, Columns, Levels];
             for (int i = 0; i < Rows; i++)
             {
@@ -55,14 +57,14 @@ namespace WindowsFormsApp1
 
             distance[start.Row, start.Column, start.Level] = 0;
 
-            // Initialize visited cells
+            // Látogatott cellák inicializálása
             bool[,,] visited = new bool[Rows, Columns, Levels];
 
-            // Dijkstra algorithm
+            // Dijkstra algoritmus
             bool pathFound = false;
             while (true)
             {
-                // Find the closest unvisited cell
+                // Meg prbálja találni a legközelebbi bejáratlan cellát
                 int minDistance = int.MaxValue;
                 Cell closestCell = null;
                 for (int i = 0; i < Rows; i++)
@@ -80,22 +82,22 @@ namespace WindowsFormsApp1
                     }
                 }
 
+                // Ha nincs több elérhető cella, vagy az úticél elérhetetlen
                 if (closestCell == null || minDistance == int.MaxValue)
                 {
-                    // No more reachable cells or destination unreachable
                     break;
                 }
 
                 visited[closestCell.Row, closestCell.Column, closestCell.Level] = true;
 
-                // Check if we reached the destination
+                // Ha elérte az úticélt
                 if (closestCell.Equals(end))
                 {
                     pathFound = true;
                     break;
                 }
 
-                // Update distances of neighboring cells
+                // Frissíti a szomszédos cellák közti távolságokat
                 for (int i = -1; i <= 1; i++)
                 {
                     for (int j = -1; j <= 1; j++)
@@ -124,11 +126,11 @@ namespace WindowsFormsApp1
 
             if (!pathFound)
             {
-                // No path found, do something (e.g., return an empty list)
+                // Ha nem talált ösvényt, visszaad egy üres Cell attribútumú listát
                 return new List<Cell>();
             }
 
-            // Reconstruct the shortest path
+            // A legrövidebb út rekonstrukciója
             List<Cell> shortestPath = new List<Cell>();
             if (visited[end.Row, end.Column, end.Level])
             {
@@ -161,12 +163,11 @@ namespace WindowsFormsApp1
                     }
                     currentCell = nextCell;
                 }
-                shortestPath.Add(start); // Add the start cell to the path
-                shortestPath.Reverse(); // Reverse the path to get the correct order
+                shortestPath.Add(start); // A kiinduló cella hozzáadása a listához
+                shortestPath.Reverse(); // a list tartalmának (azaz, az út) megfordítása a helyes sorrendért
             }
 
             return shortestPath;
         }
     }
 }
-

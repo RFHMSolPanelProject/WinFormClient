@@ -44,6 +44,10 @@ namespace WindowsFormsApp1
             {
                 MessageBox.Show($"Hiba a táblába való beszúrás során: {e}");
             }
+            finally
+            {
+                con.Close();
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
