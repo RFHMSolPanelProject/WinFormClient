@@ -69,7 +69,7 @@ namespace WindowsFormsApp1
             pcl.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void OptButton_CLick(object sender, EventArgs e)
         {
             Optimizer opt = new Optimizer();
             opt.InitAdjMat();

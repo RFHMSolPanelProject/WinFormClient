@@ -127,7 +127,7 @@
             this.button3.Text = "Alkatrészek\r\nútvonal-\r\noptimalizálása";
             this.button3.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.OptButton_CLick);
             // 
             // button2
             // 
