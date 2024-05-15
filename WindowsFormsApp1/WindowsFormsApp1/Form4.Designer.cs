@@ -44,6 +44,7 @@ namespace WindowsFormsApp1
             this.ProjektNev = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Munkavegzes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Munkadij = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid)).BeginInit();
             this.SuspendLayout();
@@ -151,7 +152,7 @@ namespace WindowsFormsApp1
             this.button3.ForeColor = System.Drawing.Color.White;
             this.button3.Location = new System.Drawing.Point(185, 232);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(110, 38);
+            this.button3.Size = new System.Drawing.Size(120, 38);
             this.button3.TabIndex = 57;
             this.button3.Text = "Hozzáad";
             this.button3.UseVisualStyleBackColor = false;
@@ -163,9 +164,9 @@ namespace WindowsFormsApp1
             this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.CornflowerBlue;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(400, 231);
+            this.button2.Location = new System.Drawing.Point(390, 231);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 39);
+            this.button2.Size = new System.Drawing.Size(118, 39);
             this.button2.TabIndex = 56;
             this.button2.Text = "Listáz";
             this.button2.UseVisualStyleBackColor = false;
@@ -198,12 +199,26 @@ namespace WindowsFormsApp1
             this.Munkadij.HeaderText = "Munkadij";
             this.Munkadij.Name = "Munkadij";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(390, 291);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(118, 31);
+            this.button1.TabIndex = 59;
+            this.button1.Text = "Árkalkuáció";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(920, 378);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.datagrid);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -242,5 +257,6 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.DataGridViewTextBoxColumn ProjektNev;
         private System.Windows.Forms.DataGridViewTextBoxColumn Munkavegzes;
         private System.Windows.Forms.DataGridViewTextBoxColumn Munkadij;
+        private System.Windows.Forms.Button button1;
     }
 }

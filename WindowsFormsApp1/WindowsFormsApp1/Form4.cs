@@ -7,7 +7,7 @@ namespace WindowsFormsApp1
 {
     public partial class Form4 : Form
     {
-        private readonly MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
+        private MySqlConnection con = new MySqlConnection(@"datasource=127.0.0.1;port=3306;username=root;password=;database=napelem");
         private MySqlCommand cmd;
         private MySqlDataAdapter adapter;
         private DataTable table;
@@ -93,7 +93,7 @@ namespace WindowsFormsApp1
 
         private void RunQuery()
         {
-            MySqlCommand cmd = new MySqlCommand("INSERT INTO Arkalkulacio(ProjectID,Munkaora,Munkadij) VALUES (@ProjektNev,@Munkavegzes, @Munkadij)", con);
+            cmd = new MySqlCommand("INSERT INTO Arkalkulacio(ProjectID,Munkaora,Munkadij) VALUES (@ProjektNev,@Munkavegzes, @Munkadij)", con);
 
             cmd.Parameters.AddWithValue("@ProjektNev", textBox2.Text);
             cmd.Parameters.AddWithValue("@Munkavegzes", textBox3.Text);
@@ -102,6 +102,11 @@ namespace WindowsFormsApp1
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

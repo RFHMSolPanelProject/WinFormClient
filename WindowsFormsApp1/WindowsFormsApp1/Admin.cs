@@ -57,25 +57,25 @@ namespace WindowsFormsApp1
             l.Show();
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            Check();
-        }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-            Check();
-        }
-
-        private void textBox4_TextChanged(object sender, EventArgs e)
         {
             Check();
         }
 
         private void Check()
         {
-            bool isHidden = textBox5.Text.Trim() != "" && textBox2.Text.Trim() != "" && (string)comboBox1.SelectedItem != "";
+            bool isHidden = !string.IsNullOrEmpty(textBox1.Text) && !string.IsNullOrEmpty(textBox2.Text) && !string.IsNullOrEmpty(comboBox1.SelectedItem?.ToString());
             button2.Visible = isHidden;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Check();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            Check();
         }
     }
 }
